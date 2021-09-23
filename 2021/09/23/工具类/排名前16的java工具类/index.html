@@ -10,7 +10,7 @@
   
   <title>
     
-      从JVM源码剖析类加载机制 | 学习-学个屁
+      工具类信息 | 学习-学个屁
     
   </title>
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -192,7 +192,7 @@
 </header>
 
     <div id="article-banner">
-  <h2>从JVM源码剖析类加载机制</h2>
+  <h2>工具类信息</h2>
   <p class="post-date">2021-09-23</p>
   <div class="arrow-down">
     <a href="javascript:;"></a>
@@ -201,7 +201,44 @@
 <main class="app-body flex-box">
   <!-- Article START -->
   <article class="post-article">
-    <section class="markdown-content"><h1 id="从JVM源码剖析类加载机制"><a href="#从JVM源码剖析类加载机制" class="headerlink" title="从JVM源码剖析类加载机制"></a>从JVM源码剖析类加载机制</h1></section>
+    <section class="markdown-content"><ul>
+<li>org.apache.commons.io.IOUtils</li>
+<li>org.apache.commons.io.FileUtils</li>
+<li>org.apache.commons.lang.StringUtils</li>
+<li>org.apache.http.util.EntityUtils</li>
+<li>org.apache.commons.lang3.StringUtils</li>
+<li>org.apache.commons.io.FilenameUtils</li>
+<li>org.springframework.util.StringUtils</li>
+<li>org.apache.commons.lang.ArrayUtils</li>
+<li>org.apache.commons.lang.StringEscapeUtils</li>
+<li>org.apache.http.client.utils.URLEncodedUtils</li>
+<li>org.apache.commons.codec.digest.DigestUtils</li>
+<li>org.apache.commons.collections.CollectionUtils</li>
+<li>org.apache.commons.lang3.ArrayUtils</li>
+<li>org.apache.commons.beanutils.PropertyUtils</li>
+<li>org.apache.commons.lang3.StringEscapeUtils</li>
+<li>org.apache.commons.beanutils.BeanUtils</li>
+</ul>
+<p>在Java中，实用程序类是定义一组通用功能的方法的类。</p>
+<p>这篇文章展示了最常用的Java使用工具类及其常用的方法</p>
+<p>希望通过本篇文章可以使您受到相关启发，以便之后可以直接使用</p>
+<p><strong>org.apache.commons.io.IOUtils</strong><br>closeQuietly()<br>toString()<br>copy()<br>toByteArray()<br>write()<br>toInputStream()<br>readLines()<br>copyLarge()<br>lineInteator()<br>readFully()</p>
+<p><strong>org.apache.commons.io.FileUtils</strong><br>deleteDirectory()<br>readFileToString()<br>deleteQuietly()<br>copyFile()<br>wirteStringToFile()<br>forceMkdir()<br>write()<br>listFiles()<br>copyDirectory()<br>forceDelete()</p>
+<p><strong>org.apache.commons.lang.StringUtils</strong><br>isBlank()<br>isNotBlank()<br>isEmpty()<br>isNotEmpty()<br>equals()<br>join()<br>split()<br>Empty()<br>trimToNull()<br>replace()</p>
+<p><strong>org.apache.http.util.EntityUtils</strong><br>toString()<br>consume()<br>toByteArray()<br>consumeQuietly()<br>getContentCharSet()</p>
+<p><strong>org.apache.commons.lang3.StringUtils</strong><br>isBlank()<br>isNotBlank()<br>isEmpty()<br>isNotEmpty()<br>equals()<br>join()<br>split()<br>Empty()<br>replace()<br>capitalize()</p>
+<p><strong>org.apache.commons.io.FilenameUtils</strong><br>getExtension()<br>getBaseName()<br>getName()<br>concat()<br>removeExtension()<br>normalize()<br>wildcardMatch()<br>separatorsToUnix()<br>getFullPath()<br>isExtension()</p>
+<p><strong>org.springframework.util.StringUtils</strong><br>hasText()<br>hasLength()<br>isEmpty()<br>commaDelimitedListToStringArray()<br>collectionToDelimitedString()<br>replace()<br>delimitedListToStringArray()<br>uncapitalize()<br>collectionToCommaDelimitedString()</p>
+<p><strong>org.apache.commons.lang.ArrayUtils</strong><br>contains()<br>addAll()<br>clone()<br>isEmpty()<br>add()<br>EMPTY_BYTE_ARRAY<br>subarry()<br>indexof()<br>isEquals()<br>toObject()</p>
+<p><strong>org.apache.commons.lang.StringEscapeUtils</strong><br>escapeHtml()<br>unescapeHtml()<br>escapeXml()<br>escapeSql()<br>unescapeJava()<br>escapeJavascript()<br>unescapeXml()<br>unescapeJavascript()</p>
+<p><strong>org.apache.http.client.utils.URLEncodedUtils</strong><br>format()<br>parse()</p>
+<p><strong>org.apache.commons.codec.digest.DigestUtils</strong><br>md5Hex()<br>shaHex()<br>sha256Hex()<br>sha1Hex()<br>sha()<br>md5()<br>sha512Hex()<br>sha1()</p>
+<p><strong>org.apache.commons.collections.CollectionUtils</strong><br>isEmpty()<br>isNotEmpty()<br>select()<br>transform()<br>filter()<br>find()<br>collect()<br>forAllDo()<br>addAll()<br>isEqualCollection()</p>
+<p><strong>org.apache.commons.lang3.ArrayUtils</strong><br>contains()<br>isEmpty()<br>isNotEmpty()<br>add()<br>clone()<br>addAll()<br>subarray()<br>indexOf()<br>EMPTY_OBJECT_ARRAY<br>EMPTY_STRING_ARRAY</p>
+<p><strong>org.apache.commons.beanutils.PropertyUtils</strong><br>getProperty()<br>setProperty()<br>getPropertyDescriptors()<br>isReadable()<br>copyProperties()<br>getPropertyDescriptor()<br>getSimpleProperty()<br>isWriteable()<br>setSimpleProperty()<br>getPropertyType()</p>
+<p><strong>org.apache.commons.lang3.StringEscapeUtils</strong><br>unescapeHtml4()<br>escapeHtml4()<br>escapeXml()<br>unescapeXml()<br>escapeJava()<br>escapeEcmaScript()<br>unescapeJava()<br>escapeJson()<br>escapeXml10()</p>
+<p><strong>org.apache.commons.beanutils.BeanUtils</strong><br>copyProperties()<br>getProperty()<br>setProperty()<br>describe()<br>populate()<br>copyProperty()<br>cloneBean()</p>
+</section>
     <!-- Tags START -->
     
     <!-- Tags END -->
@@ -210,20 +247,13 @@
   <div class="nav-container">
     <!-- reverse left and right to put prev and next in a more logic postition -->
     
-      <a class="nav-left" href="/2021/09/23/ThreadLocal%E6%98%AF%E4%BB%80%E4%B9%88/">
+      <a class="nav-left" href="/2021/09/23/%E5%B7%A5%E5%85%B7%E7%B1%BB/%E5%85%B3%E9%97%AD%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/">
         <span class="nav-arrow">← </span>
         
-          ThreadLocal是什么
+          查询占用端口
         
       </a>
     
-    
-      <a class="nav-right" href="/2021/09/23/spring/%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8IOC%E5%92%8CAOP/">
-        
-          我们为什么要用IOC和AOP
-        
-        <span class="nav-arrow"> →</span>
-      </a>
     
   </div>
 
@@ -275,7 +305,7 @@
   <div class="toc-main">
     <strong class="toc-title">Catalog</strong>
     
-      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E4%BB%8EJVM%E6%BA%90%E7%A0%81%E5%89%96%E6%9E%90%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6"><span class="toc-nav-text">从JVM源码剖析类加载机制</span></a></li></ol>
+      <ol class="nav">none</ol>
     
   </div>
 </aside>
@@ -285,7 +315,7 @@
 
 <script>
   (function () {
-    var url = 'http://example.com/2021/09/23/jvm/从JVM源码剖析类加载机制/';
+    var url = 'http://example.com/2021/09/23/工具类/排名前16的java工具类/';
     var banner = ''
     if (banner !== '' && banner !== 'undefined' && banner !== 'null') {
       $('#article-banner').css({
