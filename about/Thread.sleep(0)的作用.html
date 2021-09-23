@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta name="description" content="qudehu&#39;s blog">
+  <meta name="keyword" content="hexo-theme, vuejs">
+  
+    <link rel="shortcut icon" href="/css/images/logo.png">
+  
+  <title>
+    
+      Thread.sleep(0)的作用 | 学习-学个屁
+    
+  </title>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
+  
+    
+<script src="/js/qrious.js"></script>
+
+  
+  
+  
+  
+    <!-- MathJax support START -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- MathJax support END -->
+  
+
+
+  
+  
+    
+<script src="/js/local-search.js"></script>
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<div class="wechat-share">
+  <img src="/css/images/logo.png" />
+</div>
+  <body>
+    <header class="header fixed-header">
+  <div class="header-container">
+    <a class="home-link" href="/">
+      <div class="logo"></div>
+      <span>学习-学个屁</span>
+    </a>
+    <ul class="right-list">
+      
+        <li class="list-item">
+          
+            <a href="/" class="item-link">Home</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/series/" class="item-link">Series</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/tags/" class="item-link">Tags</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/archives/" class="item-link">Archives</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/project/" class="item-link">Projects</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/about/" class="item-link">关于</a>
+          
+        </li>
+      
+      
+        <li class="menu-item menu-item-search right-list">
+    <a role="button" class="popup-trigger">
+        <i class="fa fa-search fa-fw"></i>
+    </a>
+</li>
+      
+    </ul>
+    <div class="menu">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div class="menu-mask">
+      <ul class="menu-list">
+        
+          <li class="menu-item">
+            
+              <a href="/" class="menu-link">Home</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/series/" class="menu-link">Series</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/tags/" class="menu-link">Tags</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/archives/" class="menu-link">Archives</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/project/" class="menu-link">Projects</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/about/" class="menu-link">关于</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+    
+      <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+            <span class="search-icon">
+                <i class="fa fa-search"></i>
+            </span>
+            <div class="search-input-container">
+                <input autocomplete="off" autocapitalize="off"
+                    placeholder="Please enter your keyword(s) to search." spellcheck="false"
+                    type="search" class="search-input">
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa fa-times-circle"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+    
+  </div>
+</header>
+
+    <div id="article-banner">
+  <h2>Thread.sleep(0)的作用</h2>
+  <p class="post-date">2021-09-23</p>
+  <div class="arrow-down">
+    <a href="javascript:;"></a>
+  </div>
+</div>
+<main class="app-body flex-box">
+  <!-- Article START -->
+  <article class="post-article">
+    <section class="markdown-content"><h1 id="Thread-sleep-0-的作用"><a href="#Thread-sleep-0-的作用" class="headerlink" title="Thread.sleep(0)的作用"></a>Thread.sleep(0)的作用</h1><p>Thread.sleep(0)表示挂起0秒，你可能觉得没有作用，但是你觉得写Thread.slep(1000)就有感觉了，其实在MSDN上有相关定义，指定0s休眠，指示应挂起此线程以使其他等待线程能够执行。</p>
+<p>Thread.sleep(0)并非是真的让线程挂起0毫秒，意义在于调用Thread.sleep(0)的当前线程确实被冻结了一下，让其他线程有机会优先执行，Thread.sleep(0)是使你的线程暂时放弃cpu，也是释放一些未使用的时间片给其他线程或者进程使用，就相当于一个让位动作。</p>
+<p>在线程中，调用sleep(0)可以释放cpu时间，让线程马上重新回到就绪队列而非等待队列，sleep(0)释放当前剩余时间片(如果有剩余的话)，这样可以让操作系统切换到其他的线程来执行，提高效率，我们可能会经常性的用到Thread.sleep()函数来使线程挂起一段时间，那么你有没有正确理解这个函数的用法呢。</p>
+<h3 id="思考以下两个问题"><a href="#思考以下两个问题" class="headerlink" title="思考以下两个问题"></a>思考以下两个问题</h3><ul>
+<li>假设现在时间是2017-4-7 12:00:00.000，如果我们调用Thread.sleep(1000)，那么在2017-4-7 12:00:01.000的时候，这个线程会不会被唤醒</li>
+<li>某人在代码中使用了Thread.sleep(0)这段代码，既然是0毫秒，那么和去掉这段代码相比，有什么区别呢。</li>
+</ul>
+<h2 id="回顾下操作系统原理"><a href="#回顾下操作系统原理" class="headerlink" title="回顾下操作系统原理"></a>回顾下操作系统原理</h2><p>在操作系统中，cpu有很多的竞争策略，Unix系统使用的是时间片算法，而对于Windows而言是采用的抢占式的，在时间片算法中，所有的进程拍成一个队列，操作系统按照他们的顺序，给每个进程分配一定的时间，即该进程允许运行的时间，如果在时间片结束时该进程还在运行，则cpu讲被剥夺并分配给另外一个进程，如果进程在时间片内阻塞或者结束，则cpu当即进行切换。调度程序所要做的就是维护一张就绪进程表，当进程用完他的时间片，则他就会被移到队列的末尾。</p>
+<p>所谓的抢占式算法，就是说如果一个进程得到了cpu，除非他自己放弃使用cpu，否则讲完全霸占cpu。因此可以看出，在抢占式算法中，操作系统假设所有的进程都是”人品很好的”，会主动退出cpu。在抢占式操作系统中，假设有若干个进程，操作系统会根据他们的优先级，饥饿时间（已经多长时间没有使用cpu），给他们算出一个总的优先级来。操作系统就会把cpu交给总优先级最高的这个进程，当这个进程执行完毕或者自己挂起后，操作系统就会重新计算一次所有进程的优先级，然后再挑一个优先级最高的进程，把cpu的控制权交给他。</p>
+<p>我们也可以使用分蛋糕的形式描述这两种算法。假设有源源不断的蛋糕(源源不断的时间)，一副刀叉(一个cpu)，10个等待吃蛋糕的人(10个进程)。</p>
+<h4 id="Unix分配策略"><a href="#Unix分配策略" class="headerlink" title="Unix分配策略"></a>Unix分配策略</h4><p>如果是Unix系统来负责分配蛋糕，那么他就会这样规定：每个人上来吃1分钟，时间到了换下一个。到最后一个人吃完了就重头开始，于是，不管这10个人是否优先级不同，饥饿程度不同，饭量不同，每个人都只是上来吃1分钟，当然如果有的人本来就不太饿，或者饭量很小，吃了30s之后就饱了，那么他可以和操作系统说：我已经吃饱了（挂起），于是操作系统就会让下一个人来。</p>
+<h4 id="Windows分配策略"><a href="#Windows分配策略" class="headerlink" title="Windows分配策略"></a>Windows分配策略</h4><p>如果是Windows操作系统来负责分蛋糕，那么就会这样规定：根据你们的优先级，饥饿程度去给你们计算一个优先级。优先级最高的那个人，可以上来吃蛋糕——吃到你不想吃为止。等到这个人吃完了，我会重新计算你们的优先级，然后再次将蛋糕分配给优先级最高的人来吃。</p>
+<p>这样看来，这个场面就会有意思了，可能有些人是漂亮美眉，因此具有很高的优先级，于是他就可以经常性的来吃蛋糕，可能另外一个人是个丑男，而且很猥琐，所以优先级特别低，于是好半天了才轮到他一次（以为随着时间的推移，他会越来越饥饿，因此算出来的优先级就会比较高，因此总有一天会轮到他）。而且，如果一不小心是一个大胖子得到了刀叉，因为饭量很大，可能会霸占着蛋糕吃很久，导致其他人在那里咽口水…</p>
+<h4 id="Thread-sleep-函数详解"><a href="#Thread-sleep-函数详解" class="headerlink" title="Thread.sleep()函数详解"></a>Thread.sleep()函数详解</h4><p>那么Thread.sleep()函数是干嘛的呢，还用刚才的蛋糕场景来描述，5号美眉在吃了一次蛋糕之后已经有8分饱了，他觉得在未来的半小时内都不想再吃蛋糕了，那么他就会和操作系统说：在未来半小时内不要再叫我上来吃蛋糕了。这样，操作系统会在随后的半小时里面计算所有人总优先级的时候，就会忽略5号美眉，sleep()函数就是干这个的，他告诉操作系统“在未来的多长时间内我不参与cpu的竞争”。</p>
+<p>所以对于第一个问题：线程是否会被唤醒，答案是不一定，因为你只是告诉操作系统在未来的1000毫秒内我不想再参与cpu的竞争，那么在1000毫秒过去之后，这个时候可能另外一个线程正在使用cpu（正在吃蛋糕），那么这个时候操作系统是不会重新分配cpu的，直到这个线程挂起或者结束，况且，即使这个时候恰巧轮到操作系统重新计算优先级，他也不一定是优先级最高的了，所以cpu还是有可能被其他线程所抢去。于此类似，Thread的Resume函数，就是用来唤醒挂起的线程的，就像上面说的一样，这个函数就是告诉操作系统：从现在开始我要开始竞争cpu了，这个函数的调用并不能使线程立刻获取cpu控制权。</p>
+<p>对于第二个问题：删除Thread.sleep(0)是否有区别，有区别，而且区别很明显。假设刚刚分蛋糕的场景，另外一个7号美眉，他的优先级也非常非常高（非常非常的漂亮），所以操作系统总是让他过来吃蛋糕。而且7号美眉也非常喜欢吃蛋糕，而且饭量也很大，不过7号美眉人品很好，人很善良，没吃几口就会想，如果有别人比我更需要蛋糕，那我就让给他，因此，他每吃几口就会和操作系统说：我们重新计算下所有人的优先级吧，不过操作系统不接受他这个建议，因为操作系统没有这个接口，所以7号美眉就换了个方式说：在未来0s内不要再让我上来吃蛋糕了，这个指令操作系统是接受的，于是操作系统就会重新计算大家的优先级——注意这个时候7号美眉也是一并被计算的，因为0s已经过去了，因此如果没有比7号优先级更好的人出现的话，7号还是会被叫上去吃蛋糕。</p>
+<p>因此，Thread.sleep(0)的作用，就是“触发操作系统重新进行一次cpu竞争”，竞争的结果可能仍然是当前线程获取cpu控制权，但是也许会换成其他线程获取。这也是我们在大循环里经常性的会写一句Thread.sleep(0)的原因，因为这样就给了其他线程，比如Paint线程获取cpu的权利，这样界面就不会卡死在那里。</p>
+<p>其实，虽然上面说到：除非他自己放弃使用cpu，否则将会完全霸占cpu，这个行为其实是收到制约的——操作系统会监控你霸占cpu的情况，如果发现某个线程长时间霸占cpu，会强制这个线程挂起，因此不会出现“一个线程长时间霸占着cpu不放的情况”，至于我们的大循环假死，其实并不是这个线程一直霸占着cpu，实际上这段时间操作系统已经进行多次cpu竞争了，只不过其他的线程在获取cpu控制权之后在短时间内很快就退出了，于是又轮到了这个线程继续执行循环，于是就用了很久才会被操作系统强制挂起，因此反映到界面上，看起来好像一个线程一直在霸占着cpu一样。</p>
+<h3 id="主动放弃运行让系统调度的意义是什么呢？"><a href="#主动放弃运行让系统调度的意义是什么呢？" class="headerlink" title="主动放弃运行让系统调度的意义是什么呢？"></a>主动放弃运行让系统调度的意义是什么呢？</h3><p>为了等待资源、时间，那么你需进入等待队列，如果你已经拥有了所需资源，却还让系统进行调度，这属于资源的浪费，并且调度也是需要时间的<br>因为你要等待资源，你需要排队，加入有A和B两个线程为合作关系，A处理一些原始数据，数据处理到一定程度之后，交给B线程处理，在A处理原始数据的时候，B也要做些准备工作，所以，AB是并发的，但是B做好准备之后，需要等待A处理好那些数据，接过A的数据进行继续处理，因此，这个等待，如果A不使用信号或者等待条件来通知B的话，那么B需要一直轮询等待，，查看A是否完成，B所做的这个轮询是否一直会占用cpu来做无用功的循环查看呢？因此，当B查看A没处理完数据的时候，B马上sleep(0)交出b的时间片，让操作系统调度A来运行（假设只有AB两个线程），那么这个时候，A就会得到充分的时间去处理他的数据，代码如下:</p>
+<pre><code>thread_fun()&#123;
+    //prepare work
+    while(true)&#123;
+        if(A is finish)&#123;
+            break;
+        &#125;else&#123;
+            thread.sleep(0);  //这里会交出时间片，下一次调度B度的时候，接着执行这个循环
+        &#125;
+    &#125;
+&#125;
+</code></pre>
+<p>没有sleep(0)的版本</p>
+<pre><code>thread_fun()&#123;
+    //prepare work
+    while(true)&#123;  //这里会一直浪费cpu的时间做死循环轮询，无用功
+        if(A is finish)&#123;
+            break;
+        &#125;
+    &#125;
+&#125;
+</code></pre>
+<p>如果没有sleep(0)，那么B线程可能会执行上万次的while循环，直到他的时间片消耗完，这些都是无用功，而使用了sleep(0)后，B线程每执行一次就会把剩余的时间片让出给A，能让A得到更多的执行次数。</p>
+<p>在线程没退出前，线程有三个状态：就绪，运行，等待。sleep(n)之所以在n毫秒内不会参与cpu的竞争，是因为当调用sleep(n)的时候，线程由运行态转换为等待状态，线程被放入等待队列，等待定时器n毫秒之后，线程就会从等到状态转换为就绪状态，被放入就绪队列，等待队列的线程是不会参与cpu竞争的，只有就绪状态的线程才会参与cpu的竞争，所谓的调度就是根据一定的算法，从就绪队列中选择一个线程来执行。</p>
+<p>而sleep(0)之所以会马上参与cpu竞争，只因为调用sleep(0)后，因为0的原因，线程直接回到就绪状态，只要进入就绪状态，就会参与cpu竞争。</p>
+</section>
+    <!-- Tags START -->
+    
+    <!-- Tags END -->
+    <!-- NAV START -->
+    
+    <!-- NAV END -->
+    <!-- 打赏 START -->
+    
+      <div class="money-like">
+        <div class="reward-btn">
+          赏
+          <span class="money-code">
+            <span class="alipay-code">
+              <div class="code-image"></div>
+              <b>使用支付宝打赏</b>
+            </span>
+            <span class="wechat-code">
+              <div class="code-image"></div>
+              <b>使用微信打赏</b>
+            </span>
+          </span>
+        </div>
+        <p class="notice">若你觉得我的文章对你有帮助，欢迎点击上方按钮对我打赏</p>
+      </div>
+    
+    <!-- 打赏 END -->
+    <!-- 二维码 START -->
+    
+      <div class="qrcode">
+        <canvas id="share-qrcode"></canvas>
+        <p class="notice">扫描二维码，分享此文章</p>
+      </div>
+    
+    <!-- 二维码 END -->
+    
+      <!-- Utterances START -->
+      <div id="utterances"></div>
+      <script src="https://utteranc.es/client.js"
+        repo=""
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async></script>    
+      <!-- Utterances END -->
+    
+  </article>
+  <!-- Article END -->
+  <!-- Catalog START -->
+  
+    <aside class="catalog-container">
+  <div class="toc-main">
+    <strong class="toc-title">Catalog</strong>
+    
+      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Thread-sleep-0-%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-nav-text">Thread.sleep(0)的作用</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E6%80%9D%E8%80%83%E4%BB%A5%E4%B8%8B%E4%B8%A4%E4%B8%AA%E9%97%AE%E9%A2%98"><span class="toc-nav-text">思考以下两个问题</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%9B%9E%E9%A1%BE%E4%B8%8B%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86"><span class="toc-nav-text">回顾下操作系统原理</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#Unix%E5%88%86%E9%85%8D%E7%AD%96%E7%95%A5"><span class="toc-nav-text">Unix分配策略</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#Windows%E5%88%86%E9%85%8D%E7%AD%96%E7%95%A5"><span class="toc-nav-text">Windows分配策略</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#Thread-sleep-%E5%87%BD%E6%95%B0%E8%AF%A6%E8%A7%A3"><span class="toc-nav-text">Thread.sleep()函数详解</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E4%B8%BB%E5%8A%A8%E6%94%BE%E5%BC%83%E8%BF%90%E8%A1%8C%E8%AE%A9%E7%B3%BB%E7%BB%9F%E8%B0%83%E5%BA%A6%E7%9A%84%E6%84%8F%E4%B9%89%E6%98%AF%E4%BB%80%E4%B9%88%E5%91%A2%EF%BC%9F"><span class="toc-nav-text">主动放弃运行让系统调度的意义是什么呢？</span></a></li></ol></li></ol></li></ol>
+    
+  </div>
+</aside>
+  
+  <!-- Catalog END -->
+</main>
+
+<script>
+  (function () {
+    var url = 'http://example.com/about/Thread.sleep(0)的作用.html';
+    var banner = ''
+    if (banner !== '' && banner !== 'undefined' && banner !== 'null') {
+      $('#article-banner').css({
+        'background-image': 'url(' + banner + ')'
+      })
+    } else {
+      $('#article-banner').geopattern(url)
+    }
+    $('.header').removeClass('fixed-header')
+
+    // error image
+    $(".markdown-content img").on('error', function() {
+      $(this).attr('src', '/css/images/error_icon.png')
+      $(this).css({
+        'cursor': 'default'
+      })
+    })
+
+    // zoom image
+    $(".markdown-content img").on('click', function() {
+      var src = $(this).attr('src')
+      if (src !== '/css/images/error_icon.png') {
+        var imageW = $(this).width()
+        var imageH = $(this).height()
+
+        var zoom = ($(window).width() * 0.95 / imageW).toFixed(2)
+        zoom = zoom < 1 ? 1 : zoom
+        zoom = zoom > 2 ? 2 : zoom
+        var transY = (($(window).height() - imageH) / 2).toFixed(2)
+
+        $('body').append('<div class="image-view-wrap"><div class="image-view-inner"><img src="'+ src +'" /></div></div>')
+        $('.image-view-wrap').addClass('wrap-active')
+        $('.image-view-wrap img').css({
+          'width': `${imageW}`,
+          'transform': `translate3d(0, ${transY}px, 0) scale3d(${zoom}, ${zoom}, 1)`
+        })
+        $('html').css('overflow', 'hidden')
+
+        $('.image-view-wrap').on('click', function() {
+          $(this).remove()
+          $('html').attr('style', '')
+        })
+      }
+    })
+  })();
+</script>
+
+
+  <script>
+    var qr = new QRious({
+      element: document.getElementById('share-qrcode'),
+      value: document.location.href
+    });
+  </script>
+
+
+
+
+
+
+    <div class="scroll-top">
+  <span class="arrow-icon"></span>
+</div>
+    <footer class="app-footer">
+  <p class="copyright">
+    &copy; 2021 | Proudly powered by <a href="https://hexo.io" target="_blank">qudehu</a>
+    <br>
+    Theme by <a target="_blank" rel="noopener" href="https://github.com/yanm1ng">qudehu</a>
+  </p>
+</footer>
+
+<script>
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+</script>
+<script>
+  async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+    FastClick.attach(document.body);
+  })
+</script>
+
+<script>
+  var hasLine = 'true';
+  async("//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js", function(){
+    $('figure pre').each(function(i, block) {
+      var figure = $(this).parents('figure');
+      if (hasLine === 'false') {
+        figure.find('.gutter').hide();
+      }
+      hljs.configure({useBR: true});
+      var lang = figure.attr('class').split(' ')[1] || 'code';
+      var codeHtml = $(this).html();
+      var codeTag = document.createElement('code');
+      codeTag.className = lang;
+      codeTag.innerHTML = codeHtml;
+      $(this).attr('class', '').empty().html(codeTag);
+      figure.attr('data-lang', lang.toUpperCase());
+      hljs.highlightBlock(block);
+    });
+  })
+</script>
+<!-- Baidu Tongji -->
+
+
+<script src="/js/script.js"></script>
+
+
+  </body>
+</html>
