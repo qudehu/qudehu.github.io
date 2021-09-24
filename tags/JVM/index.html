@@ -10,7 +10,7 @@
   
   <title>
     
-      从JVM源码剖析类加载机制 | 学习-学个屁
+      学习-学个屁
     
   </title>
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -192,166 +192,82 @@
 </header>
 
     <div id="article-banner">
-  <h2>从JVM源码剖析类加载机制</h2>
-  <p class="post-date">2021-09-23</p>
-  <div class="arrow-down">
-    <a href="javascript:;"></a>
-  </div>
+  <h2>Archives</h2>
+  <p class="post-date">Archives</p>
 </div>
-<main class="app-body flex-box">
-  <!-- Article START -->
-  <article class="post-article">
-    <section class="markdown-content"><h1 id="从JVM源码剖析类加载机制"><a href="#从JVM源码剖析类加载机制" class="headerlink" title="从JVM源码剖析类加载机制"></a>从JVM源码剖析类加载机制</h1></section>
-    <!-- Tags START -->
+<main class="app-body" id="archives">
+  
+  
+  
+    <section class="time-section">
+  <h1 class="section-year">
+    2021
+  </h1>
+  <div class="section-list">
     
-      <div class="tags">
-        <span>Tags:</span>
-        
-  <a href="/tags#projects" >
-    <span class="tag-code">projects</span>
-  </a>
-
-  <a href="/tags#JVM" >
-    <span class="tag-code">JVM</span>
-  </a>
-
+    
+      <div class="section-list-item">
+        <a href="/2021/09/23/jvm/%E4%BB%8EJVM%E6%BA%90%E7%A0%81%E5%89%96%E6%9E%90%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6/" class="archive-title">从JVM源码剖析类加载机制</a>
+        <p class="archive-date">09-23</p>
       </div>
     
-    <!-- Tags END -->
-    <!-- NAV START -->
+      <div class="section-list-item">
+        <a href="/2021/09/23/categories/%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8IOC%E5%92%8CAOP/" class="archive-title">我们为什么要用IOC和AOP</a>
+        <p class="archive-date">09-23</p>
+      </div>
     
-  <div class="nav-container">
-    <!-- reverse left and right to put prev and next in a more logic postition -->
+      <div class="section-list-item">
+        <a href="/2021/09/23/project/%E6%8E%92%E5%90%8D%E5%89%8D16%E7%9A%84java%E5%B7%A5%E5%85%B7%E7%B1%BB/" class="archive-title">工具类信息</a>
+        <p class="archive-date">09-23</p>
+      </div>
     
-      <a class="nav-left" href="/2021/09/23/categories/%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8IOC%E5%92%8CAOP/">
-        <span class="nav-arrow">← </span>
-        
-          我们为什么要用IOC和AOP
-        
-      </a>
+      <div class="section-list-item">
+        <a href="/2021/09/23/project/%E5%85%B3%E9%97%AD%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/" class="archive-title">查询占用端口</a>
+        <p class="archive-date">09-23</p>
+      </div>
     
+      <div class="section-list-item">
+        <a href="/2021/09/23/tags/%E6%8E%92%E5%90%8D%E5%89%8D16%E7%9A%84java%E5%B7%A5%E5%85%B7%E7%B1%BB/" class="archive-title">工具类信息</a>
+        <p class="archive-date">09-23</p>
+      </div>
+    
+      <div class="section-list-item">
+        <a href="/2021/09/23/tags/%E5%85%B3%E9%97%AD%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/" class="archive-title">查询占用端口</a>
+        <p class="archive-date">09-23</p>
+      </div>
+    
+      <div class="section-list-item">
+        <a href="/2021/09/23/mysql/mysql%E4%BC%98%E5%8C%96/" class="archive-title">mysql优化</a>
+        <p class="archive-date">09-23</p>
+      </div>
+    
+      <div class="section-list-item">
+        <a href="/2021/09/23/mysql/mysql21%E4%B8%AA%E5%A5%BD%E4%B9%A0%E6%83%AF/" class="archive-title">mysql的21个好习惯</a>
+        <p class="archive-date">09-23</p>
+      </div>
+    
+      <div class="section-list-item">
+        <a href="/2021/09/23/series/ThreadLocal%E6%98%AF%E4%BB%80%E4%B9%88/" class="archive-title">ThreadLocal是什么</a>
+        <p class="archive-date">09-23</p>
+      </div>
+    
+      <div class="section-list-item">
+        <a href="/2021/09/23/archives/Thread.sleep(0)%E7%9A%84%E4%BD%9C%E7%94%A8/" class="archive-title">Thread.sleep(0)的作用</a>
+        <p class="archive-date">09-23</p>
+      </div>
     
   </div>
-
-    <!-- NAV END -->
-    <!-- 打赏 START -->
-    
-      <div class="money-like">
-        <div class="reward-btn">
-          赏
-          <span class="money-code">
-            <span class="alipay-code">
-              <div class="code-image"></div>
-              <b>使用支付宝打赏</b>
-            </span>
-            <span class="wechat-code">
-              <div class="code-image"></div>
-              <b>使用微信打赏</b>
-            </span>
-          </span>
-        </div>
-        <p class="notice">若你觉得我的文章对你有帮助，欢迎点击上方按钮对我打赏</p>
-      </div>
-    
-    <!-- 打赏 END -->
-    <!-- 二维码 START -->
-    
-      <div class="qrcode">
-        <canvas id="share-qrcode"></canvas>
-        <p class="notice">扫描二维码，分享此文章</p>
-      </div>
-    
-    <!-- 二维码 END -->
-    
-      <!-- Utterances START -->
-      <div id="utterances"></div>
-      <script src="https://utteranc.es/client.js"
-        repo=""
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async></script>    
-      <!-- Utterances END -->
-    
-  </article>
-  <!-- Article END -->
-  <!-- Catalog START -->
+</section>
   
-    <aside class="catalog-container">
-  <div class="toc-main">
-    <strong class="toc-title">Catalog</strong>
-    
-      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E4%BB%8EJVM%E6%BA%90%E7%A0%81%E5%89%96%E6%9E%90%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6"><span class="toc-nav-text">从JVM源码剖析类加载机制</span></a></li></ol>
-    
-  </div>
-</aside>
-  
-  <!-- Catalog END -->
 </main>
 
 <script>
   (function () {
-    var url = 'http://example.com/2021/09/23/jvm/从JVM源码剖析类加载机制/';
-    var banner = ''
-    if (banner !== '' && banner !== 'undefined' && banner !== 'null') {
-      $('#article-banner').css({
-        'background-image': 'url(' + banner + ')'
-      })
-    } else {
-      $('#article-banner').geopattern(url)
-    }
-    $('.header').removeClass('fixed-header')
-
-    // error image
-    $(".markdown-content img").on('error', function() {
-      $(this).attr('src', '/css/images/error_icon.png')
-      $(this).css({
-        'cursor': 'default'
-      })
-    })
-
-    // zoom image
-    $(".markdown-content img").on('click', function() {
-      var src = $(this).attr('src')
-      if (src !== '/css/images/error_icon.png') {
-        var imageW = $(this).width()
-        var imageH = $(this).height()
-
-        var zoom = ($(window).width() * 0.95 / imageW).toFixed(2)
-        zoom = zoom < 1 ? 1 : zoom
-        zoom = zoom > 2 ? 2 : zoom
-        var transY = (($(window).height() - imageH) / 2).toFixed(2)
-
-        $('body').append('<div class="image-view-wrap"><div class="image-view-inner"><img src="'+ src +'" /></div></div>')
-        $('.image-view-wrap').addClass('wrap-active')
-        $('.image-view-wrap img').css({
-          'width': `${imageW}`,
-          'transform': `translate3d(0, ${transY}px, 0) scale3d(${zoom}, ${zoom}, 1)`
-        })
-        $('html').css('overflow', 'hidden')
-
-        $('.image-view-wrap').on('click', function() {
-          $(this).remove()
-          $('html').attr('style', '')
-        })
-      }
-    })
+    var url = 'http://example.com/tags/JVM/index.html';
+    $('#article-banner').geopattern(url);
+    $('.header').removeClass('fixed-header');
   })();
 </script>
-
-
-  <script>
-    var qr = new QRious({
-      element: document.getElementById('share-qrcode'),
-      value: document.location.href
-    });
-  </script>
-
-
-
-
-
-
     <div class="scroll-top">
   <span class="arrow-icon"></span>
 </div>
