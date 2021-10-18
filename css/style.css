@@ -324,7 +324,7 @@ h2.article-head {
 }
 #myComment {
   position: relative;
-  width: 700px;
+  width: 50%;
   left: 300px;
 }
 .header {
