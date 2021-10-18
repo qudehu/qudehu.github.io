@@ -322,6 +322,11 @@ h2.article-head {
   opacity: 1;
   transform: translate(0, 0);
 }
+#myComment {
+  position: relative;
+  width: 700px;
+  left: 300px;
+}
 .header {
   background: none;
   border: none;
