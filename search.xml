@@ -1,53 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>查询占用端口</title>
-    <url>/2021/09/23/project/%E5%85%B3%E9%97%AD%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/</url>
-    <content><![CDATA[<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">-- 查询占用端口</span><br><span class="line">netstat -ano | <span class="built_in">findstr</span> <span class="number">8080</span> </span><br><span class="line">-- 关闭占用端口</span><br><span class="line"><span class="built_in">taskkill</span> /F /PID xxx</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
-    <title>工具类信息</title>
-    <url>/2021/09/23/project/%E6%8E%92%E5%90%8D%E5%89%8D16%E7%9A%84java%E5%B7%A5%E5%85%B7%E7%B1%BB/</url>
-    <content><![CDATA[<ul>
-<li>org.apache.commons.io.IOUtils</li>
-<li>org.apache.commons.io.FileUtils</li>
-<li>org.apache.commons.lang.StringUtils</li>
-<li>org.apache.http.util.EntityUtils</li>
-<li>org.apache.commons.lang3.StringUtils</li>
-<li>org.apache.commons.io.FilenameUtils</li>
-<li>org.springframework.util.StringUtils</li>
-<li>org.apache.commons.lang.ArrayUtils</li>
-<li>org.apache.commons.lang.StringEscapeUtils</li>
-<li>org.apache.http.client.utils.URLEncodedUtils</li>
-<li>org.apache.commons.codec.digest.DigestUtils</li>
-<li>org.apache.commons.collections.CollectionUtils</li>
-<li>org.apache.commons.lang3.ArrayUtils</li>
-<li>org.apache.commons.beanutils.PropertyUtils</li>
-<li>org.apache.commons.lang3.StringEscapeUtils</li>
-<li>org.apache.commons.beanutils.BeanUtils</li>
-</ul>
-<p>在Java中，实用程序类是定义一组通用功能的方法的类。</p>
-<p>这篇文章展示了最常用的Java使用工具类及其常用的方法</p>
-<p>希望通过本篇文章可以使您受到相关启发，以便之后可以直接使用</p>
-<p><strong>org.apache.commons.io.IOUtils</strong><br>closeQuietly()<br>toString()<br>copy()<br>toByteArray()<br>write()<br>toInputStream()<br>readLines()<br>copyLarge()<br>lineInteator()<br>readFully()</p>
-<p><strong>org.apache.commons.io.FileUtils</strong><br>deleteDirectory()<br>readFileToString()<br>deleteQuietly()<br>copyFile()<br>wirteStringToFile()<br>forceMkdir()<br>write()<br>listFiles()<br>copyDirectory()<br>forceDelete()</p>
-<p><strong>org.apache.commons.lang.StringUtils</strong><br>isBlank()<br>isNotBlank()<br>isEmpty()<br>isNotEmpty()<br>equals()<br>join()<br>split()<br>Empty()<br>trimToNull()<br>replace()</p>
-<p><strong>org.apache.http.util.EntityUtils</strong><br>toString()<br>consume()<br>toByteArray()<br>consumeQuietly()<br>getContentCharSet()</p>
-<p><strong>org.apache.commons.lang3.StringUtils</strong><br>isBlank()<br>isNotBlank()<br>isEmpty()<br>isNotEmpty()<br>equals()<br>join()<br>split()<br>Empty()<br>replace()<br>capitalize()</p>
-<p><strong>org.apache.commons.io.FilenameUtils</strong><br>getExtension()<br>getBaseName()<br>getName()<br>concat()<br>removeExtension()<br>normalize()<br>wildcardMatch()<br>separatorsToUnix()<br>getFullPath()<br>isExtension()</p>
-<p><strong>org.springframework.util.StringUtils</strong><br>hasText()<br>hasLength()<br>isEmpty()<br>commaDelimitedListToStringArray()<br>collectionToDelimitedString()<br>replace()<br>delimitedListToStringArray()<br>uncapitalize()<br>collectionToCommaDelimitedString()</p>
-<p><strong>org.apache.commons.lang.ArrayUtils</strong><br>contains()<br>addAll()<br>clone()<br>isEmpty()<br>add()<br>EMPTY_BYTE_ARRAY<br>subarry()<br>indexof()<br>isEquals()<br>toObject()</p>
-<p><strong>org.apache.commons.lang.StringEscapeUtils</strong><br>escapeHtml()<br>unescapeHtml()<br>escapeXml()<br>escapeSql()<br>unescapeJava()<br>escapeJavascript()<br>unescapeXml()<br>unescapeJavascript()</p>
-<p><strong>org.apache.http.client.utils.URLEncodedUtils</strong><br>format()<br>parse()</p>
-<p><strong>org.apache.commons.codec.digest.DigestUtils</strong><br>md5Hex()<br>shaHex()<br>sha256Hex()<br>sha1Hex()<br>sha()<br>md5()<br>sha512Hex()<br>sha1()</p>
-<p><strong>org.apache.commons.collections.CollectionUtils</strong><br>isEmpty()<br>isNotEmpty()<br>select()<br>transform()<br>filter()<br>find()<br>collect()<br>forAllDo()<br>addAll()<br>isEqualCollection()</p>
-<p><strong>org.apache.commons.lang3.ArrayUtils</strong><br>contains()<br>isEmpty()<br>isNotEmpty()<br>add()<br>clone()<br>addAll()<br>subarray()<br>indexOf()<br>EMPTY_OBJECT_ARRAY<br>EMPTY_STRING_ARRAY</p>
-<p><strong>org.apache.commons.beanutils.PropertyUtils</strong><br>getProperty()<br>setProperty()<br>getPropertyDescriptors()<br>isReadable()<br>copyProperties()<br>getPropertyDescriptor()<br>getSimpleProperty()<br>isWriteable()<br>setSimpleProperty()<br>getPropertyType()</p>
-<p><strong>org.apache.commons.lang3.StringEscapeUtils</strong><br>unescapeHtml4()<br>escapeHtml4()<br>escapeXml()<br>unescapeXml()<br>escapeJava()<br>escapeEcmaScript()<br>unescapeJava()<br>escapeJson()<br>escapeXml10()</p>
-<p><strong>org.apache.commons.beanutils.BeanUtils</strong><br>copyProperties()<br>getProperty()<br>setProperty()<br>describe()<br>populate()<br>copyProperty()<br>cloneBean()</p>
-]]></content>
-  </entry>
-  <entry>
     <title>docker安装oracle</title>
     <url>/2021/09/27/Docker%E5%AE%89%E8%A3%85oracle/</url>
     <content><![CDATA[<ol>
@@ -78,6 +31,54 @@
         <tag>docker</tag>
         <tag>oracle</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Thread.sleep(0)的作用</title>
+    <url>/2013/07/13/archives/Thread.sleep(0)%E7%9A%84%E4%BD%9C%E7%94%A8/</url>
+    <content><![CDATA[<h1 id="Thread-sleep-0-的作用"><a href="#Thread-sleep-0-的作用" class="headerlink" title="Thread.sleep(0)的作用"></a>Thread.sleep(0)的作用</h1><p>Thread.sleep(0)表示挂起0秒，你可能觉得没有作用，但是你觉得写Thread.slep(1000)就有感觉了，其实在MSDN上有相关定义，指定0s休眠，指示应挂起此线程以使其他等待线程能够执行。</p>
+<p>Thread.sleep(0)并非是真的让线程挂起0毫秒，意义在于调用Thread.sleep(0)的当前线程确实被冻结了一下，让其他线程有机会优先执行，Thread.sleep(0)是使你的线程暂时放弃cpu，也是释放一些未使用的时间片给其他线程或者进程使用，就相当于一个让位动作。</p>
+<p>在线程中，调用sleep(0)可以释放cpu时间，让线程马上重新回到就绪队列而非等待队列，sleep(0)释放当前剩余时间片(如果有剩余的话)，这样可以让操作系统切换到其他的线程来执行，提高效率，我们可能会经常性的用到Thread.sleep()函数来使线程挂起一段时间，那么你有没有正确理解这个函数的用法呢。</p>
+<h3 id="思考以下两个问题"><a href="#思考以下两个问题" class="headerlink" title="思考以下两个问题"></a>思考以下两个问题</h3><ul>
+<li>假设现在时间是2017-4-7 12:00:00.000，如果我们调用Thread.sleep(1000)，那么在2017-4-7 12:00:01.000的时候，这个线程会不会被唤醒</li>
+<li>某人在代码中使用了Thread.sleep(0)这段代码，既然是0毫秒，那么和去掉这段代码相比，有什么区别呢。</li>
+</ul>
+<h2 id="回顾下操作系统原理"><a href="#回顾下操作系统原理" class="headerlink" title="回顾下操作系统原理"></a>回顾下操作系统原理</h2><p>在操作系统中，cpu有很多的竞争策略，Unix系统使用的是时间片算法，而对于Windows而言是采用的抢占式的，在时间片算法中，所有的进程拍成一个队列，操作系统按照他们的顺序，给每个进程分配一定的时间，即该进程允许运行的时间，如果在时间片结束时该进程还在运行，则cpu讲被剥夺并分配给另外一个进程，如果进程在时间片内阻塞或者结束，则cpu当即进行切换。调度程序所要做的就是维护一张就绪进程表，当进程用完他的时间片，则他就会被移到队列的末尾。</p>
+<p>所谓的抢占式算法，就是说如果一个进程得到了cpu，除非他自己放弃使用cpu，否则讲完全霸占cpu。因此可以看出，在抢占式算法中，操作系统假设所有的进程都是”人品很好的”，会主动退出cpu。在抢占式操作系统中，假设有若干个进程，操作系统会根据他们的优先级，饥饿时间（已经多长时间没有使用cpu），给他们算出一个总的优先级来。操作系统就会把cpu交给总优先级最高的这个进程，当这个进程执行完毕或者自己挂起后，操作系统就会重新计算一次所有进程的优先级，然后再挑一个优先级最高的进程，把cpu的控制权交给他。</p>
+<p>我们也可以使用分蛋糕的形式描述这两种算法。假设有源源不断的蛋糕(源源不断的时间)，一副刀叉(一个cpu)，10个等待吃蛋糕的人(10个进程)。</p>
+<h4 id="Unix分配策略"><a href="#Unix分配策略" class="headerlink" title="Unix分配策略"></a>Unix分配策略</h4><p>如果是Unix系统来负责分配蛋糕，那么他就会这样规定：每个人上来吃1分钟，时间到了换下一个。到最后一个人吃完了就重头开始，于是，不管这10个人是否优先级不同，饥饿程度不同，饭量不同，每个人都只是上来吃1分钟，当然如果有的人本来就不太饿，或者饭量很小，吃了30s之后就饱了，那么他可以和操作系统说：我已经吃饱了（挂起），于是操作系统就会让下一个人来。</p>
+<h4 id="Windows分配策略"><a href="#Windows分配策略" class="headerlink" title="Windows分配策略"></a>Windows分配策略</h4><p>如果是Windows操作系统来负责分蛋糕，那么就会这样规定：根据你们的优先级，饥饿程度去给你们计算一个优先级。优先级最高的那个人，可以上来吃蛋糕——吃到你不想吃为止。等到这个人吃完了，我会重新计算你们的优先级，然后再次将蛋糕分配给优先级最高的人来吃。</p>
+<p>这样看来，这个场面就会有意思了，可能有些人是漂亮美眉，因此具有很高的优先级，于是他就可以经常性的来吃蛋糕，可能另外一个人是个丑男，而且很猥琐，所以优先级特别低，于是好半天了才轮到他一次（以为随着时间的推移，他会越来越饥饿，因此算出来的优先级就会比较高，因此总有一天会轮到他）。而且，如果一不小心是一个大胖子得到了刀叉，因为饭量很大，可能会霸占着蛋糕吃很久，导致其他人在那里咽口水…</p>
+<h4 id="Thread-sleep-函数详解"><a href="#Thread-sleep-函数详解" class="headerlink" title="Thread.sleep()函数详解"></a>Thread.sleep()函数详解</h4><p>那么Thread.sleep()函数是干嘛的呢，还用刚才的蛋糕场景来描述，5号美眉在吃了一次蛋糕之后已经有8分饱了，他觉得在未来的半小时内都不想再吃蛋糕了，那么他就会和操作系统说：在未来半小时内不要再叫我上来吃蛋糕了。这样，操作系统会在随后的半小时里面计算所有人总优先级的时候，就会忽略5号美眉，sleep()函数就是干这个的，他告诉操作系统“在未来的多长时间内我不参与cpu的竞争”。</p>
+<p>所以对于第一个问题：线程是否会被唤醒，答案是不一定，因为你只是告诉操作系统在未来的1000毫秒内我不想再参与cpu的竞争，那么在1000毫秒过去之后，这个时候可能另外一个线程正在使用cpu（正在吃蛋糕），那么这个时候操作系统是不会重新分配cpu的，直到这个线程挂起或者结束，况且，即使这个时候恰巧轮到操作系统重新计算优先级，他也不一定是优先级最高的了，所以cpu还是有可能被其他线程所抢去。于此类似，Thread的Resume函数，就是用来唤醒挂起的线程的，就像上面说的一样，这个函数就是告诉操作系统：从现在开始我要开始竞争cpu了，这个函数的调用并不能使线程立刻获取cpu控制权。</p>
+<p>对于第二个问题：删除Thread.sleep(0)是否有区别，有区别，而且区别很明显。假设刚刚分蛋糕的场景，另外一个7号美眉，他的优先级也非常非常高（非常非常的漂亮），所以操作系统总是让他过来吃蛋糕。而且7号美眉也非常喜欢吃蛋糕，而且饭量也很大，不过7号美眉人品很好，人很善良，没吃几口就会想，如果有别人比我更需要蛋糕，那我就让给他，因此，他每吃几口就会和操作系统说：我们重新计算下所有人的优先级吧，不过操作系统不接受他这个建议，因为操作系统没有这个接口，所以7号美眉就换了个方式说：在未来0s内不要再让我上来吃蛋糕了，这个指令操作系统是接受的，于是操作系统就会重新计算大家的优先级——注意这个时候7号美眉也是一并被计算的，因为0s已经过去了，因此如果没有比7号优先级更好的人出现的话，7号还是会被叫上去吃蛋糕。</p>
+<p>因此，Thread.sleep(0)的作用，就是“触发操作系统重新进行一次cpu竞争”，竞争的结果可能仍然是当前线程获取cpu控制权，但是也许会换成其他线程获取。这也是我们在大循环里经常性的会写一句Thread.sleep(0)的原因，因为这样就给了其他线程，比如Paint线程获取cpu的权利，这样界面就不会卡死在那里。</p>
+<p>其实，虽然上面说到：除非他自己放弃使用cpu，否则将会完全霸占cpu，这个行为其实是收到制约的——操作系统会监控你霸占cpu的情况，如果发现某个线程长时间霸占cpu，会强制这个线程挂起，因此不会出现“一个线程长时间霸占着cpu不放的情况”，至于我们的大循环假死，其实并不是这个线程一直霸占着cpu，实际上这段时间操作系统已经进行多次cpu竞争了，只不过其他的线程在获取cpu控制权之后在短时间内很快就退出了，于是又轮到了这个线程继续执行循环，于是就用了很久才会被操作系统强制挂起，因此反映到界面上，看起来好像一个线程一直在霸占着cpu一样。</p>
+<h3 id="主动放弃运行让系统调度的意义是什么呢？"><a href="#主动放弃运行让系统调度的意义是什么呢？" class="headerlink" title="主动放弃运行让系统调度的意义是什么呢？"></a>主动放弃运行让系统调度的意义是什么呢？</h3><p>为了等待资源、时间，那么你需进入等待队列，如果你已经拥有了所需资源，却还让系统进行调度，这属于资源的浪费，并且调度也是需要时间的<br>因为你要等待资源，你需要排队，加入有A和B两个线程为合作关系，A处理一些原始数据，数据处理到一定程度之后，交给B线程处理，在A处理原始数据的时候，B也要做些准备工作，所以，AB是并发的，但是B做好准备之后，需要等待A处理好那些数据，接过A的数据进行继续处理，因此，这个等待，如果A不使用信号或者等待条件来通知B的话，那么B需要一直轮询等待，，查看A是否完成，B所做的这个轮询是否一直会占用cpu来做无用功的循环查看呢？因此，当B查看A没处理完数据的时候，B马上sleep(0)交出b的时间片，让操作系统调度A来运行（假设只有AB两个线程），那么这个时候，A就会得到充分的时间去处理他的数据，代码如下:</p>
+<pre><code>thread_fun()&#123;
+    //prepare work
+    while(true)&#123;
+        if(A is finish)&#123;
+            break;
+        &#125;else&#123;
+            thread.sleep(0);  //这里会交出时间片，下一次调度B度的时候，接着执行这个循环
+        &#125;
+    &#125;
+&#125;
+</code></pre>
+<p>没有sleep(0)的版本</p>
+<pre><code>thread_fun()&#123;
+    //prepare work
+    while(true)&#123;  //这里会一直浪费cpu的时间做死循环轮询，无用功
+        if(A is finish)&#123;
+            break;
+        &#125;
+    &#125;
+&#125;
+</code></pre>
+<p>如果没有sleep(0)，那么B线程可能会执行上万次的while循环，直到他的时间片消耗完，这些都是无用功，而使用了sleep(0)后，B线程每执行一次就会把剩余的时间片让出给A，能让A得到更多的执行次数。</p>
+<p>在线程没退出前，线程有三个状态：就绪，运行，等待。sleep(n)之所以在n毫秒内不会参与cpu的竞争，是因为当调用sleep(n)的时候，线程由运行态转换为等待状态，线程被放入等待队列，等待定时器n毫秒之后，线程就会从等到状态转换为就绪状态，被放入就绪队列，等待队列的线程是不会参与cpu竞争的，只有就绪状态的线程才会参与cpu的竞争，所谓的调度就是根据一定的算法，从就绪队列中选择一个线程来执行。</p>
+<p>而sleep(0)之所以会马上参与cpu竞争，只因为调用sleep(0)后，因为0的原因，线程直接回到就绪状态，只要进入就绪状态，就会参与cpu竞争。</p>
+]]></content>
   </entry>
   <entry>
     <title>我们为什么要用IOC和AOP</title>
@@ -155,136 +156,6 @@
 <li>切面逻辑编写繁琐，有多个业务就需要编写多少次。</li>
 </ul>
 ]]></content>
-  </entry>
-  <entry>
-    <title>Thread.sleep(0)的作用</title>
-    <url>/2013/07/13/archives/Thread.sleep(0)%E7%9A%84%E4%BD%9C%E7%94%A8/</url>
-    <content><![CDATA[<h1 id="Thread-sleep-0-的作用"><a href="#Thread-sleep-0-的作用" class="headerlink" title="Thread.sleep(0)的作用"></a>Thread.sleep(0)的作用</h1><p>Thread.sleep(0)表示挂起0秒，你可能觉得没有作用，但是你觉得写Thread.slep(1000)就有感觉了，其实在MSDN上有相关定义，指定0s休眠，指示应挂起此线程以使其他等待线程能够执行。</p>
-<p>Thread.sleep(0)并非是真的让线程挂起0毫秒，意义在于调用Thread.sleep(0)的当前线程确实被冻结了一下，让其他线程有机会优先执行，Thread.sleep(0)是使你的线程暂时放弃cpu，也是释放一些未使用的时间片给其他线程或者进程使用，就相当于一个让位动作。</p>
-<p>在线程中，调用sleep(0)可以释放cpu时间，让线程马上重新回到就绪队列而非等待队列，sleep(0)释放当前剩余时间片(如果有剩余的话)，这样可以让操作系统切换到其他的线程来执行，提高效率，我们可能会经常性的用到Thread.sleep()函数来使线程挂起一段时间，那么你有没有正确理解这个函数的用法呢。</p>
-<h3 id="思考以下两个问题"><a href="#思考以下两个问题" class="headerlink" title="思考以下两个问题"></a>思考以下两个问题</h3><ul>
-<li>假设现在时间是2017-4-7 12:00:00.000，如果我们调用Thread.sleep(1000)，那么在2017-4-7 12:00:01.000的时候，这个线程会不会被唤醒</li>
-<li>某人在代码中使用了Thread.sleep(0)这段代码，既然是0毫秒，那么和去掉这段代码相比，有什么区别呢。</li>
-</ul>
-<h2 id="回顾下操作系统原理"><a href="#回顾下操作系统原理" class="headerlink" title="回顾下操作系统原理"></a>回顾下操作系统原理</h2><p>在操作系统中，cpu有很多的竞争策略，Unix系统使用的是时间片算法，而对于Windows而言是采用的抢占式的，在时间片算法中，所有的进程拍成一个队列，操作系统按照他们的顺序，给每个进程分配一定的时间，即该进程允许运行的时间，如果在时间片结束时该进程还在运行，则cpu讲被剥夺并分配给另外一个进程，如果进程在时间片内阻塞或者结束，则cpu当即进行切换。调度程序所要做的就是维护一张就绪进程表，当进程用完他的时间片，则他就会被移到队列的末尾。</p>
-<p>所谓的抢占式算法，就是说如果一个进程得到了cpu，除非他自己放弃使用cpu，否则讲完全霸占cpu。因此可以看出，在抢占式算法中，操作系统假设所有的进程都是”人品很好的”，会主动退出cpu。在抢占式操作系统中，假设有若干个进程，操作系统会根据他们的优先级，饥饿时间（已经多长时间没有使用cpu），给他们算出一个总的优先级来。操作系统就会把cpu交给总优先级最高的这个进程，当这个进程执行完毕或者自己挂起后，操作系统就会重新计算一次所有进程的优先级，然后再挑一个优先级最高的进程，把cpu的控制权交给他。</p>
-<p>我们也可以使用分蛋糕的形式描述这两种算法。假设有源源不断的蛋糕(源源不断的时间)，一副刀叉(一个cpu)，10个等待吃蛋糕的人(10个进程)。</p>
-<h4 id="Unix分配策略"><a href="#Unix分配策略" class="headerlink" title="Unix分配策略"></a>Unix分配策略</h4><p>如果是Unix系统来负责分配蛋糕，那么他就会这样规定：每个人上来吃1分钟，时间到了换下一个。到最后一个人吃完了就重头开始，于是，不管这10个人是否优先级不同，饥饿程度不同，饭量不同，每个人都只是上来吃1分钟，当然如果有的人本来就不太饿，或者饭量很小，吃了30s之后就饱了，那么他可以和操作系统说：我已经吃饱了（挂起），于是操作系统就会让下一个人来。</p>
-<h4 id="Windows分配策略"><a href="#Windows分配策略" class="headerlink" title="Windows分配策略"></a>Windows分配策略</h4><p>如果是Windows操作系统来负责分蛋糕，那么就会这样规定：根据你们的优先级，饥饿程度去给你们计算一个优先级。优先级最高的那个人，可以上来吃蛋糕——吃到你不想吃为止。等到这个人吃完了，我会重新计算你们的优先级，然后再次将蛋糕分配给优先级最高的人来吃。</p>
-<p>这样看来，这个场面就会有意思了，可能有些人是漂亮美眉，因此具有很高的优先级，于是他就可以经常性的来吃蛋糕，可能另外一个人是个丑男，而且很猥琐，所以优先级特别低，于是好半天了才轮到他一次（以为随着时间的推移，他会越来越饥饿，因此算出来的优先级就会比较高，因此总有一天会轮到他）。而且，如果一不小心是一个大胖子得到了刀叉，因为饭量很大，可能会霸占着蛋糕吃很久，导致其他人在那里咽口水…</p>
-<h4 id="Thread-sleep-函数详解"><a href="#Thread-sleep-函数详解" class="headerlink" title="Thread.sleep()函数详解"></a>Thread.sleep()函数详解</h4><p>那么Thread.sleep()函数是干嘛的呢，还用刚才的蛋糕场景来描述，5号美眉在吃了一次蛋糕之后已经有8分饱了，他觉得在未来的半小时内都不想再吃蛋糕了，那么他就会和操作系统说：在未来半小时内不要再叫我上来吃蛋糕了。这样，操作系统会在随后的半小时里面计算所有人总优先级的时候，就会忽略5号美眉，sleep()函数就是干这个的，他告诉操作系统“在未来的多长时间内我不参与cpu的竞争”。</p>
-<p>所以对于第一个问题：线程是否会被唤醒，答案是不一定，因为你只是告诉操作系统在未来的1000毫秒内我不想再参与cpu的竞争，那么在1000毫秒过去之后，这个时候可能另外一个线程正在使用cpu（正在吃蛋糕），那么这个时候操作系统是不会重新分配cpu的，直到这个线程挂起或者结束，况且，即使这个时候恰巧轮到操作系统重新计算优先级，他也不一定是优先级最高的了，所以cpu还是有可能被其他线程所抢去。于此类似，Thread的Resume函数，就是用来唤醒挂起的线程的，就像上面说的一样，这个函数就是告诉操作系统：从现在开始我要开始竞争cpu了，这个函数的调用并不能使线程立刻获取cpu控制权。</p>
-<p>对于第二个问题：删除Thread.sleep(0)是否有区别，有区别，而且区别很明显。假设刚刚分蛋糕的场景，另外一个7号美眉，他的优先级也非常非常高（非常非常的漂亮），所以操作系统总是让他过来吃蛋糕。而且7号美眉也非常喜欢吃蛋糕，而且饭量也很大，不过7号美眉人品很好，人很善良，没吃几口就会想，如果有别人比我更需要蛋糕，那我就让给他，因此，他每吃几口就会和操作系统说：我们重新计算下所有人的优先级吧，不过操作系统不接受他这个建议，因为操作系统没有这个接口，所以7号美眉就换了个方式说：在未来0s内不要再让我上来吃蛋糕了，这个指令操作系统是接受的，于是操作系统就会重新计算大家的优先级——注意这个时候7号美眉也是一并被计算的，因为0s已经过去了，因此如果没有比7号优先级更好的人出现的话，7号还是会被叫上去吃蛋糕。</p>
-<p>因此，Thread.sleep(0)的作用，就是“触发操作系统重新进行一次cpu竞争”，竞争的结果可能仍然是当前线程获取cpu控制权，但是也许会换成其他线程获取。这也是我们在大循环里经常性的会写一句Thread.sleep(0)的原因，因为这样就给了其他线程，比如Paint线程获取cpu的权利，这样界面就不会卡死在那里。</p>
-<p>其实，虽然上面说到：除非他自己放弃使用cpu，否则将会完全霸占cpu，这个行为其实是收到制约的——操作系统会监控你霸占cpu的情况，如果发现某个线程长时间霸占cpu，会强制这个线程挂起，因此不会出现“一个线程长时间霸占着cpu不放的情况”，至于我们的大循环假死，其实并不是这个线程一直霸占着cpu，实际上这段时间操作系统已经进行多次cpu竞争了，只不过其他的线程在获取cpu控制权之后在短时间内很快就退出了，于是又轮到了这个线程继续执行循环，于是就用了很久才会被操作系统强制挂起，因此反映到界面上，看起来好像一个线程一直在霸占着cpu一样。</p>
-<h3 id="主动放弃运行让系统调度的意义是什么呢？"><a href="#主动放弃运行让系统调度的意义是什么呢？" class="headerlink" title="主动放弃运行让系统调度的意义是什么呢？"></a>主动放弃运行让系统调度的意义是什么呢？</h3><p>为了等待资源、时间，那么你需进入等待队列，如果你已经拥有了所需资源，却还让系统进行调度，这属于资源的浪费，并且调度也是需要时间的<br>因为你要等待资源，你需要排队，加入有A和B两个线程为合作关系，A处理一些原始数据，数据处理到一定程度之后，交给B线程处理，在A处理原始数据的时候，B也要做些准备工作，所以，AB是并发的，但是B做好准备之后，需要等待A处理好那些数据，接过A的数据进行继续处理，因此，这个等待，如果A不使用信号或者等待条件来通知B的话，那么B需要一直轮询等待，，查看A是否完成，B所做的这个轮询是否一直会占用cpu来做无用功的循环查看呢？因此，当B查看A没处理完数据的时候，B马上sleep(0)交出b的时间片，让操作系统调度A来运行（假设只有AB两个线程），那么这个时候，A就会得到充分的时间去处理他的数据，代码如下:</p>
-<pre><code>thread_fun()&#123;
-    //prepare work
-    while(true)&#123;
-        if(A is finish)&#123;
-            break;
-        &#125;else&#123;
-            thread.sleep(0);  //这里会交出时间片，下一次调度B度的时候，接着执行这个循环
-        &#125;
-    &#125;
-&#125;
-</code></pre>
-<p>没有sleep(0)的版本</p>
-<pre><code>thread_fun()&#123;
-    //prepare work
-    while(true)&#123;  //这里会一直浪费cpu的时间做死循环轮询，无用功
-        if(A is finish)&#123;
-            break;
-        &#125;
-    &#125;
-&#125;
-</code></pre>
-<p>如果没有sleep(0)，那么B线程可能会执行上万次的while循环，直到他的时间片消耗完，这些都是无用功，而使用了sleep(0)后，B线程每执行一次就会把剩余的时间片让出给A，能让A得到更多的执行次数。</p>
-<p>在线程没退出前，线程有三个状态：就绪，运行，等待。sleep(n)之所以在n毫秒内不会参与cpu的竞争，是因为当调用sleep(n)的时候，线程由运行态转换为等待状态，线程被放入等待队列，等待定时器n毫秒之后，线程就会从等到状态转换为就绪状态，被放入就绪队列，等待队列的线程是不会参与cpu竞争的，只有就绪状态的线程才会参与cpu的竞争，所谓的调度就是根据一定的算法，从就绪队列中选择一个线程来执行。</p>
-<p>而sleep(0)之所以会马上参与cpu竞争，只因为调用sleep(0)后，因为0的原因，线程直接回到就绪状态，只要进入就绪状态，就会参与cpu竞争。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>ThreadLocal是什么</title>
-    <url>/2021/09/23/series/ThreadLocal%E6%98%AF%E4%BB%80%E4%B9%88/</url>
-    <content><![CDATA[<h1 id="ThreadLocal是什么？怎么用？为什么要用？他有什么缺点？如何避免"><a href="#ThreadLocal是什么？怎么用？为什么要用？他有什么缺点？如何避免" class="headerlink" title="ThreadLocal是什么？怎么用？为什么要用？他有什么缺点？如何避免"></a>ThreadLocal是什么？怎么用？为什么要用？他有什么缺点？如何避免</h1><h2 id="ThreadLocal是什么"><a href="#ThreadLocal是什么" class="headerlink" title="ThreadLocal是什么"></a>ThreadLocal是什么</h2><p>在了解ThreadLocal之前，我们先了解下什么是线程封闭</p>
-<blockquote>
-<p>把对象封闭在一个线程里，即使这个对象不是线程安全的，也不会出现并发安全问题</p>
-</blockquote>
-<p><strong>实现线程封闭大致有三种方式：</strong></p>
-<ol>
-<li>栈封闭：就是用栈（stack）来保证线程安全</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testThread</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    StringBuilder sb = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">    sb.append(<span class="string">&quot;Hello&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>StringBuilder不是线程安全的，但是他只是个<em><strong>局部变量</strong></em>，<em><strong>局部变量</strong></em>是存储在<em><strong>虚拟机栈</strong></em>的，<em><strong>虚拟机栈</strong></em>是线程隔离的，所以不会有线程安全问题。</p>
-<ol start="2">
-<li>Ad-hoc线程封闭：维护线程封闭性的职责完全有线程来承担，不推荐使用。</li>
-<li>ThreadLocal线程封闭，简单易用</li>
-</ol>
-<p>第三种方式就是使用ThreadLocal来实现线程封闭，线程封闭的指导思想是封闭，而不是共享。所以说ThreadLocal是用来解决变量共享的并发安全问题，是有些不精确的。</p>
-<p>其实，从JDK1.2开始，提供的ThreadLocal使用就非常简单：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ThreadLocalDemo</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">final</span> ThreadLocal&lt;String&gt; threadLocal = <span class="keyword">new</span> ThreadLocal&lt;&gt;();</span><br><span class="line">        threadLocal.set(<span class="string">&quot;main-thread : Hello&quot;</span>);</span><br><span class="line">        </span><br><span class="line">        Thread thread = <span class="keyword">new</span> Thread(() -&gt; &#123;</span><br><span class="line">            <span class="comment">// 获取不到主线程设置的值，所以为null</span></span><br><span class="line">            System.out.println(threadLocal.get());</span><br><span class="line">            threadLocal.set(<span class="string">&quot;sub-thread : World&quot;</span>);</span><br><span class="line">            System.out.println(threadLocal.get());</span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="comment">// 启动子线程</span></span><br><span class="line">        thread.start();</span><br><span class="line">        <span class="comment">// 让子线程先执行完成，再继续执行主线</span></span><br><span class="line">        thread.join();</span><br><span class="line">        <span class="comment">// 获取到的是主线程设置的值，而不是子线程设置的</span></span><br><span class="line">        System.out.println(threadLocal.get());</span><br><span class="line">        threadLocal.remove();</span><br><span class="line">        System.out.println(threadLocal.get());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">null</span><br><span class="line">sub-thread : World</span><br><span class="line">main-thread : Hello</span><br><span class="line">null</span><br></pre></td></tr></table></figure>
-
-<p>运行结果说明了ThreadLocal只能获取本线程设置的值，这也体现了线程封闭的问思想。基本上，ThreadLocal对外提供的方法只有三个，get()，set(T)，remove()。</p>
-<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>使用方式非常简单，所以我们看下ThreadLocal的源码，ThreadLocal内部定义了一个静态ThreadLocalMap类，ThreadLocalMap内部又定义了一个Entry类，这里只看一些比较重要的属性和方法。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ThreadLocal</span>&lt;<span class="title">T</span>&gt; </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> T <span class="title">get</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Thread t = Thread.currentThread();</span><br><span class="line">        ThreadLocalMap map = getMap(t);</span><br><span class="line">        <span class="keyword">if</span> (map != <span class="keyword">null</span>) &#123;</span><br><span class="line">            ThreadLocalMap.Entry e = map.getEntry(<span class="keyword">this</span>);</span><br><span class="line">            <span class="keyword">if</span> (e != <span class="keyword">null</span>) &#123;</span><br><span class="line">                <span class="meta">@SuppressWarnings(&quot;unchecked&quot;)</span></span><br><span class="line">                T result = (T)e.value;</span><br><span class="line">                <span class="keyword">return</span> result;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> setInitialValue();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">set</span><span class="params">(T value)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//获取当前线程对象</span></span><br><span class="line">        Thread t = Thread.currentThread();</span><br><span class="line">        <span class="comment">//根据当前线程对象获取ThreadLocalMap（ThreadLocalMap被Thread（线程）所持有）</span></span><br><span class="line">        ThreadLocalMap map = getMap(t);</span><br><span class="line">        <span class="comment">//如果ThreadLocalMap存在，则直接插入，不存在则新建ThreadLocalMap</span></span><br><span class="line">        <span class="keyword">if</span> (map != <span class="keyword">null</span>)</span><br><span class="line">            map.set(<span class="keyword">this</span>, value);</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            createMap(t, value);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">remove</span><span class="params">()</span> </span>&#123;</span><br><span class="line">         ThreadLocalMap m = getMap(Thread.currentThread());</span><br><span class="line">         <span class="keyword">if</span> (m != <span class="keyword">null</span>)</span><br><span class="line">             m.remove(<span class="keyword">this</span>);</span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line"> <span class="comment">// 从这里可以看出ThreadLocalMap对象是被Thread类持有的</span></span><br><span class="line">    <span class="function">ThreadLocalMap <span class="title">getMap</span><span class="params">(Thread t)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> t.threadLocals;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">createMap</span><span class="params">(Thread t, T firstValue)</span> </span>&#123;</span><br><span class="line">        t.threadLocals = <span class="keyword">new</span> ThreadLocalMap(<span class="keyword">this</span>, firstValue);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"> <span class="comment">// 内部类ThreadLocalMap</span></span><br><span class="line">    <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">ThreadLocalMap</span> </span>&#123;</span><br><span class="line">        <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">Entry</span> <span class="keyword">extends</span> <span class="title">WeakReference</span>&lt;<span class="title">ThreadLocal</span>&lt;?&gt;&gt; </span>&#123;</span><br><span class="line">            Object value;</span><br><span class="line">   <span class="comment">// 内部类Entity，实际存储数据的地方</span></span><br><span class="line">   <span class="comment">// Entry的key是ThreadLocal对象，不是当前线程ID或者名称</span></span><br><span class="line">            Entry(ThreadLocal&lt;?&gt; k, Object v) &#123;</span><br><span class="line">                <span class="keyword">super</span>(k);</span><br><span class="line">                value = v;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">  <span class="comment">// 注意这里维护的是Entry数组</span></span><br><span class="line">        <span class="keyword">private</span> Entry[] table;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>根据上面的源码，大致画出ThreadLocal在虚拟机中的内存结构：<br><img src="https://i.loli.net/2021/04/29/jtYPu13X2xZyKMh.png" alt="ThreadLocal内存结构">  </p>
-<p>实箭头表示强引用，虚箭头表示弱引用，需要注意的是：</p>
-<ul>
-<li>ThreadLocalmap虽然是在ThreadLocal中定义的，但是实际上被Thread（当前线程）所持有</li>
-<li>Entry的key是ThreadLocal对象，而不是当前线程的ID或者线程名称。</li>
-<li>ThreadLocalMap持有的是Entry数组，而不是Entry实例</li>
-</ul>
-<p>对于第一点，ThreadLocalMap对象被hread(线程)所持有，是为了实现每个线程都有自己独立的ThreadLocalMap对象，以此为基础，做到线程的隔离，第二点和第三点，我们先来想一个问题，如果一个线程中定义了多个ThreadLocal对象，内存结构应该如何，在此之前，我们先看set方法的源码：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">set</span><span class="params">(T value)</span> </span>&#123;</span><br><span class="line">   <span class="comment">// 获取当前线程对象</span></span><br><span class="line">     Thread t = Thread.currentThread();</span><br><span class="line">     <span class="comment">// 根据线程对象获取ThreadLocalMap对象（ThreadLocalMap被Thread持有）</span></span><br><span class="line">     ThreadLocalMap map = getMap(t);</span><br><span class="line">     <span class="comment">// 如果ThreadLocalMap存在，则直接插入；不存在，则新建ThreadLocalMap</span></span><br><span class="line">     <span class="keyword">if</span> (map != <span class="keyword">null</span>)</span><br><span class="line">         map.set(<span class="keyword">this</span>, value);</span><br><span class="line">     <span class="keyword">else</span></span><br><span class="line">         createMap(t, value);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-
-<p>也就是说，如果程序定义了多个ThreadLocal对象的话，并不会创建多个ThreadLocalMap对象，而会共用一个ThreadLocalMap对象，所以内存结构应该是这样：<br><img src="https://i.loli.net/2021/04/29/qGNm1PfK2MwBTaX.png" alt="内存结构">  </p>
-<p>这个内存结构解释了第二点和第三点，如果Entry中的key是当前线程的ID或者名称的话，那么程序中定义多个ThreadLocal对象的时，Entry数组中的所有的Entry的key都一样（因为他们处于同一个线程中），或者说他们只能存一个value，ThreadLocalMap中持有的时Entry数组，而不是Entry，则是因为程序可以定义多个ThreadLocal对象，自然而然需要一个数组来存储。</p>
-<h2 id="内存泄漏"><a href="#内存泄漏" class="headerlink" title="内存泄漏"></a>内存泄漏</h2><h4 id="ThreadLocal会发生内存泄漏吗？"><a href="#ThreadLocal会发生内存泄漏吗？" class="headerlink" title="ThreadLocal会发生内存泄漏吗？"></a>ThreadLocal会发生内存泄漏吗？</h4><blockquote>
-<p>会</p>
-</blockquote>
-<p>因为Entry数组通过ThreadLocalMap最终被Thread持有，并且是强引用，也就是说Entry数组对象的生命周期和当前线程是一样的，即使ThreadLocal对象被回收了，Entry数组也不一定会被回收，因为线程可能没被回收，这样也就有可能会发生内存泄漏，ThreadLocal在设计的时候就提供了一些补救措施：</p>
-<ul>
-<li>Entry数组的key是弱引用的ThreadLocal对象，很容易被回收，导致key为null（但是value不为null），所以在调用get，set，remove的时候会自动清理key为null的Entry</li>
-<li>同时remove方法也是用来清理无用对象，防止内存泄漏的，所以每次用完ThreadLocal对象后需要手动调用remove方法。<br>有些文章认为是弱引用导致了内存泄漏，其实是不对的。假设把所有的弱引用都改成强引用，这样无用对象的key和value都不会为null，反而更不利于回收。只能通过调用remove方法手动清理，或者等待线程结束生命周期。也就是说ThreadLocalMap的生命周期由他的线程来决定，线程如果不中断，ThreadLocalMap就不会被GC回收，这才是ThreadLocal内存泄漏的真正原因。</li>
-</ul>
-<h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><ul>
-<li>维护JDBC的java.sql.Connection对象，因为每个线程都需要保持特定的Connection对象。</li>
-<li>Web开发时，有些信息需要从controller传到service传到dao，甚至传到util类。看起来非常不优雅，这时便可以使用ThreadLocal来优雅的实现。</li>
-<li>包括线程不安全的工具类，比如Random、SimpleDateFormat等</li>
-</ul>
-<h2 id="与synchronized的关系"><a href="#与synchronized的关系" class="headerlink" title="与synchronized的关系"></a>与synchronized的关系</h2><ul>
-<li>synchronized是同一时间最多只有一个线程执行，所以变量只需要存一份，是一种时间换空间的方式</li>
-<li>ThreadLocal是多个线程之间互不影响，所以每个线程存一份变量，是一种空间换时间的方式</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>mysql优化</title>
-    <url>/2021/09/23/mysql/mysql%E4%BC%98%E5%8C%96/</url>
-    <content><![CDATA[<h1 id="mysql优化"><a href="#mysql优化" class="headerlink" title="mysql优化"></a>mysql优化</h1><p>关于索引结构：</p>
-<ol>
-<li>二叉树</li>
-<li>红黑树（二叉平衡树）</li>
-<li>hash索引</li>
-<li>b树</li>
-<li>b+树</li>
-</ol>
-]]></content>
-      <categories>
-        <category>数据库</category>
-        <category>优化</category>
-        <category>MYSQL</category>
-      </categories>
-      <tags>
-        <tag>MySQL</tag>
-        <tag>调优</tag>
-      </tags>
   </entry>
   <entry>
     <title>mysql的21个好习惯</title>
@@ -478,6 +349,135 @@
         <category>优化</category>
         <category>MYSQL</category>
       </categories>
+  </entry>
+  <entry>
+    <title>mysql优化</title>
+    <url>/2021/09/23/mysql/mysql%E4%BC%98%E5%8C%96/</url>
+    <content><![CDATA[<h1 id="mysql优化"><a href="#mysql优化" class="headerlink" title="mysql优化"></a>mysql优化</h1><p>关于索引结构：</p>
+<ol>
+<li>二叉树</li>
+<li>红黑树（二叉平衡树）</li>
+<li>hash索引</li>
+<li>b树</li>
+<li>b+树</li>
+</ol>
+]]></content>
+      <categories>
+        <category>数据库</category>
+        <category>优化</category>
+        <category>MYSQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+        <tag>调优</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>查询占用端口</title>
+    <url>/2021/09/23/project/%E5%85%B3%E9%97%AD%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/</url>
+    <content><![CDATA[<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">-- 查询占用端口</span><br><span class="line">netstat -ano | <span class="built_in">findstr</span> <span class="number">8080</span> </span><br><span class="line">-- 关闭占用端口</span><br><span class="line"><span class="built_in">taskkill</span> /F /PID xxx</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>工具类信息</title>
+    <url>/2021/09/23/project/%E6%8E%92%E5%90%8D%E5%89%8D16%E7%9A%84java%E5%B7%A5%E5%85%B7%E7%B1%BB/</url>
+    <content><![CDATA[<ul>
+<li>org.apache.commons.io.IOUtils</li>
+<li>org.apache.commons.io.FileUtils</li>
+<li>org.apache.commons.lang.StringUtils</li>
+<li>org.apache.http.util.EntityUtils</li>
+<li>org.apache.commons.lang3.StringUtils</li>
+<li>org.apache.commons.io.FilenameUtils</li>
+<li>org.springframework.util.StringUtils</li>
+<li>org.apache.commons.lang.ArrayUtils</li>
+<li>org.apache.commons.lang.StringEscapeUtils</li>
+<li>org.apache.http.client.utils.URLEncodedUtils</li>
+<li>org.apache.commons.codec.digest.DigestUtils</li>
+<li>org.apache.commons.collections.CollectionUtils</li>
+<li>org.apache.commons.lang3.ArrayUtils</li>
+<li>org.apache.commons.beanutils.PropertyUtils</li>
+<li>org.apache.commons.lang3.StringEscapeUtils</li>
+<li>org.apache.commons.beanutils.BeanUtils</li>
+</ul>
+<p>在Java中，实用程序类是定义一组通用功能的方法的类。</p>
+<p>这篇文章展示了最常用的Java使用工具类及其常用的方法</p>
+<p>希望通过本篇文章可以使您受到相关启发，以便之后可以直接使用</p>
+<p><strong>org.apache.commons.io.IOUtils</strong><br>closeQuietly()<br>toString()<br>copy()<br>toByteArray()<br>write()<br>toInputStream()<br>readLines()<br>copyLarge()<br>lineInteator()<br>readFully()</p>
+<p><strong>org.apache.commons.io.FileUtils</strong><br>deleteDirectory()<br>readFileToString()<br>deleteQuietly()<br>copyFile()<br>wirteStringToFile()<br>forceMkdir()<br>write()<br>listFiles()<br>copyDirectory()<br>forceDelete()</p>
+<p><strong>org.apache.commons.lang.StringUtils</strong><br>isBlank()<br>isNotBlank()<br>isEmpty()<br>isNotEmpty()<br>equals()<br>join()<br>split()<br>Empty()<br>trimToNull()<br>replace()</p>
+<p><strong>org.apache.http.util.EntityUtils</strong><br>toString()<br>consume()<br>toByteArray()<br>consumeQuietly()<br>getContentCharSet()</p>
+<p><strong>org.apache.commons.lang3.StringUtils</strong><br>isBlank()<br>isNotBlank()<br>isEmpty()<br>isNotEmpty()<br>equals()<br>join()<br>split()<br>Empty()<br>replace()<br>capitalize()</p>
+<p><strong>org.apache.commons.io.FilenameUtils</strong><br>getExtension()<br>getBaseName()<br>getName()<br>concat()<br>removeExtension()<br>normalize()<br>wildcardMatch()<br>separatorsToUnix()<br>getFullPath()<br>isExtension()</p>
+<p><strong>org.springframework.util.StringUtils</strong><br>hasText()<br>hasLength()<br>isEmpty()<br>commaDelimitedListToStringArray()<br>collectionToDelimitedString()<br>replace()<br>delimitedListToStringArray()<br>uncapitalize()<br>collectionToCommaDelimitedString()</p>
+<p><strong>org.apache.commons.lang.ArrayUtils</strong><br>contains()<br>addAll()<br>clone()<br>isEmpty()<br>add()<br>EMPTY_BYTE_ARRAY<br>subarry()<br>indexof()<br>isEquals()<br>toObject()</p>
+<p><strong>org.apache.commons.lang.StringEscapeUtils</strong><br>escapeHtml()<br>unescapeHtml()<br>escapeXml()<br>escapeSql()<br>unescapeJava()<br>escapeJavascript()<br>unescapeXml()<br>unescapeJavascript()</p>
+<p><strong>org.apache.http.client.utils.URLEncodedUtils</strong><br>format()<br>parse()</p>
+<p><strong>org.apache.commons.codec.digest.DigestUtils</strong><br>md5Hex()<br>shaHex()<br>sha256Hex()<br>sha1Hex()<br>sha()<br>md5()<br>sha512Hex()<br>sha1()</p>
+<p><strong>org.apache.commons.collections.CollectionUtils</strong><br>isEmpty()<br>isNotEmpty()<br>select()<br>transform()<br>filter()<br>find()<br>collect()<br>forAllDo()<br>addAll()<br>isEqualCollection()</p>
+<p><strong>org.apache.commons.lang3.ArrayUtils</strong><br>contains()<br>isEmpty()<br>isNotEmpty()<br>add()<br>clone()<br>addAll()<br>subarray()<br>indexOf()<br>EMPTY_OBJECT_ARRAY<br>EMPTY_STRING_ARRAY</p>
+<p><strong>org.apache.commons.beanutils.PropertyUtils</strong><br>getProperty()<br>setProperty()<br>getPropertyDescriptors()<br>isReadable()<br>copyProperties()<br>getPropertyDescriptor()<br>getSimpleProperty()<br>isWriteable()<br>setSimpleProperty()<br>getPropertyType()</p>
+<p><strong>org.apache.commons.lang3.StringEscapeUtils</strong><br>unescapeHtml4()<br>escapeHtml4()<br>escapeXml()<br>unescapeXml()<br>escapeJava()<br>escapeEcmaScript()<br>unescapeJava()<br>escapeJson()<br>escapeXml10()</p>
+<p><strong>org.apache.commons.beanutils.BeanUtils</strong><br>copyProperties()<br>getProperty()<br>setProperty()<br>describe()<br>populate()<br>copyProperty()<br>cloneBean()</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>ThreadLocal是什么</title>
+    <url>/2021/09/23/series/ThreadLocal%E6%98%AF%E4%BB%80%E4%B9%88/</url>
+    <content><![CDATA[<h1 id="ThreadLocal是什么？怎么用？为什么要用？他有什么缺点？如何避免"><a href="#ThreadLocal是什么？怎么用？为什么要用？他有什么缺点？如何避免" class="headerlink" title="ThreadLocal是什么？怎么用？为什么要用？他有什么缺点？如何避免"></a>ThreadLocal是什么？怎么用？为什么要用？他有什么缺点？如何避免</h1><h2 id="ThreadLocal是什么"><a href="#ThreadLocal是什么" class="headerlink" title="ThreadLocal是什么"></a>ThreadLocal是什么</h2><p>在了解ThreadLocal之前，我们先了解下什么是线程封闭</p>
+<blockquote>
+<p>把对象封闭在一个线程里，即使这个对象不是线程安全的，也不会出现并发安全问题</p>
+</blockquote>
+<p><strong>实现线程封闭大致有三种方式：</strong></p>
+<ol>
+<li>栈封闭：就是用栈（stack）来保证线程安全</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testThread</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    StringBuilder sb = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">    sb.append(<span class="string">&quot;Hello&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>StringBuilder不是线程安全的，但是他只是个<em><strong>局部变量</strong></em>，<em><strong>局部变量</strong></em>是存储在<em><strong>虚拟机栈</strong></em>的，<em><strong>虚拟机栈</strong></em>是线程隔离的，所以不会有线程安全问题。</p>
+<ol start="2">
+<li>Ad-hoc线程封闭：维护线程封闭性的职责完全有线程来承担，不推荐使用。</li>
+<li>ThreadLocal线程封闭，简单易用</li>
+</ol>
+<p>第三种方式就是使用ThreadLocal来实现线程封闭，线程封闭的指导思想是封闭，而不是共享。所以说ThreadLocal是用来解决变量共享的并发安全问题，是有些不精确的。</p>
+<p>其实，从JDK1.2开始，提供的ThreadLocal使用就非常简单：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ThreadLocalDemo</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">final</span> ThreadLocal&lt;String&gt; threadLocal = <span class="keyword">new</span> ThreadLocal&lt;&gt;();</span><br><span class="line">        threadLocal.set(<span class="string">&quot;main-thread : Hello&quot;</span>);</span><br><span class="line">        </span><br><span class="line">        Thread thread = <span class="keyword">new</span> Thread(() -&gt; &#123;</span><br><span class="line">            <span class="comment">// 获取不到主线程设置的值，所以为null</span></span><br><span class="line">            System.out.println(threadLocal.get());</span><br><span class="line">            threadLocal.set(<span class="string">&quot;sub-thread : World&quot;</span>);</span><br><span class="line">            System.out.println(threadLocal.get());</span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="comment">// 启动子线程</span></span><br><span class="line">        thread.start();</span><br><span class="line">        <span class="comment">// 让子线程先执行完成，再继续执行主线</span></span><br><span class="line">        thread.join();</span><br><span class="line">        <span class="comment">// 获取到的是主线程设置的值，而不是子线程设置的</span></span><br><span class="line">        System.out.println(threadLocal.get());</span><br><span class="line">        threadLocal.remove();</span><br><span class="line">        System.out.println(threadLocal.get());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">null</span><br><span class="line">sub-thread : World</span><br><span class="line">main-thread : Hello</span><br><span class="line">null</span><br></pre></td></tr></table></figure>
+
+<p>运行结果说明了ThreadLocal只能获取本线程设置的值，这也体现了线程封闭的问思想。基本上，ThreadLocal对外提供的方法只有三个，get()，set(T)，remove()。</p>
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>使用方式非常简单，所以我们看下ThreadLocal的源码，ThreadLocal内部定义了一个静态ThreadLocalMap类，ThreadLocalMap内部又定义了一个Entry类，这里只看一些比较重要的属性和方法。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ThreadLocal</span>&lt;<span class="title">T</span>&gt; </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> T <span class="title">get</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Thread t = Thread.currentThread();</span><br><span class="line">        ThreadLocalMap map = getMap(t);</span><br><span class="line">        <span class="keyword">if</span> (map != <span class="keyword">null</span>) &#123;</span><br><span class="line">            ThreadLocalMap.Entry e = map.getEntry(<span class="keyword">this</span>);</span><br><span class="line">            <span class="keyword">if</span> (e != <span class="keyword">null</span>) &#123;</span><br><span class="line">                <span class="meta">@SuppressWarnings(&quot;unchecked&quot;)</span></span><br><span class="line">                T result = (T)e.value;</span><br><span class="line">                <span class="keyword">return</span> result;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> setInitialValue();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">set</span><span class="params">(T value)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//获取当前线程对象</span></span><br><span class="line">        Thread t = Thread.currentThread();</span><br><span class="line">        <span class="comment">//根据当前线程对象获取ThreadLocalMap（ThreadLocalMap被Thread（线程）所持有）</span></span><br><span class="line">        ThreadLocalMap map = getMap(t);</span><br><span class="line">        <span class="comment">//如果ThreadLocalMap存在，则直接插入，不存在则新建ThreadLocalMap</span></span><br><span class="line">        <span class="keyword">if</span> (map != <span class="keyword">null</span>)</span><br><span class="line">            map.set(<span class="keyword">this</span>, value);</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            createMap(t, value);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">remove</span><span class="params">()</span> </span>&#123;</span><br><span class="line">         ThreadLocalMap m = getMap(Thread.currentThread());</span><br><span class="line">         <span class="keyword">if</span> (m != <span class="keyword">null</span>)</span><br><span class="line">             m.remove(<span class="keyword">this</span>);</span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line"> <span class="comment">// 从这里可以看出ThreadLocalMap对象是被Thread类持有的</span></span><br><span class="line">    <span class="function">ThreadLocalMap <span class="title">getMap</span><span class="params">(Thread t)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> t.threadLocals;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">createMap</span><span class="params">(Thread t, T firstValue)</span> </span>&#123;</span><br><span class="line">        t.threadLocals = <span class="keyword">new</span> ThreadLocalMap(<span class="keyword">this</span>, firstValue);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"> <span class="comment">// 内部类ThreadLocalMap</span></span><br><span class="line">    <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">ThreadLocalMap</span> </span>&#123;</span><br><span class="line">        <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">Entry</span> <span class="keyword">extends</span> <span class="title">WeakReference</span>&lt;<span class="title">ThreadLocal</span>&lt;?&gt;&gt; </span>&#123;</span><br><span class="line">            Object value;</span><br><span class="line">   <span class="comment">// 内部类Entity，实际存储数据的地方</span></span><br><span class="line">   <span class="comment">// Entry的key是ThreadLocal对象，不是当前线程ID或者名称</span></span><br><span class="line">            Entry(ThreadLocal&lt;?&gt; k, Object v) &#123;</span><br><span class="line">                <span class="keyword">super</span>(k);</span><br><span class="line">                value = v;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">  <span class="comment">// 注意这里维护的是Entry数组</span></span><br><span class="line">        <span class="keyword">private</span> Entry[] table;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>根据上面的源码，大致画出ThreadLocal在虚拟机中的内存结构：<br><img src="https://i.loli.net/2021/04/29/jtYPu13X2xZyKMh.png" alt="ThreadLocal内存结构">  </p>
+<p>实箭头表示强引用，虚箭头表示弱引用，需要注意的是：</p>
+<ul>
+<li>ThreadLocalmap虽然是在ThreadLocal中定义的，但是实际上被Thread（当前线程）所持有</li>
+<li>Entry的key是ThreadLocal对象，而不是当前线程的ID或者线程名称。</li>
+<li>ThreadLocalMap持有的是Entry数组，而不是Entry实例</li>
+</ul>
+<p>对于第一点，ThreadLocalMap对象被hread(线程)所持有，是为了实现每个线程都有自己独立的ThreadLocalMap对象，以此为基础，做到线程的隔离，第二点和第三点，我们先来想一个问题，如果一个线程中定义了多个ThreadLocal对象，内存结构应该如何，在此之前，我们先看set方法的源码：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">set</span><span class="params">(T value)</span> </span>&#123;</span><br><span class="line">   <span class="comment">// 获取当前线程对象</span></span><br><span class="line">     Thread t = Thread.currentThread();</span><br><span class="line">     <span class="comment">// 根据线程对象获取ThreadLocalMap对象（ThreadLocalMap被Thread持有）</span></span><br><span class="line">     ThreadLocalMap map = getMap(t);</span><br><span class="line">     <span class="comment">// 如果ThreadLocalMap存在，则直接插入；不存在，则新建ThreadLocalMap</span></span><br><span class="line">     <span class="keyword">if</span> (map != <span class="keyword">null</span>)</span><br><span class="line">         map.set(<span class="keyword">this</span>, value);</span><br><span class="line">     <span class="keyword">else</span></span><br><span class="line">         createMap(t, value);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>也就是说，如果程序定义了多个ThreadLocal对象的话，并不会创建多个ThreadLocalMap对象，而会共用一个ThreadLocalMap对象，所以内存结构应该是这样：<br><img src="https://i.loli.net/2021/04/29/qGNm1PfK2MwBTaX.png" alt="内存结构">  </p>
+<p>这个内存结构解释了第二点和第三点，如果Entry中的key是当前线程的ID或者名称的话，那么程序中定义多个ThreadLocal对象的时，Entry数组中的所有的Entry的key都一样（因为他们处于同一个线程中），或者说他们只能存一个value，ThreadLocalMap中持有的时Entry数组，而不是Entry，则是因为程序可以定义多个ThreadLocal对象，自然而然需要一个数组来存储。</p>
+<h2 id="内存泄漏"><a href="#内存泄漏" class="headerlink" title="内存泄漏"></a>内存泄漏</h2><h4 id="ThreadLocal会发生内存泄漏吗？"><a href="#ThreadLocal会发生内存泄漏吗？" class="headerlink" title="ThreadLocal会发生内存泄漏吗？"></a>ThreadLocal会发生内存泄漏吗？</h4><blockquote>
+<p>会</p>
+</blockquote>
+<p>因为Entry数组通过ThreadLocalMap最终被Thread持有，并且是强引用，也就是说Entry数组对象的生命周期和当前线程是一样的，即使ThreadLocal对象被回收了，Entry数组也不一定会被回收，因为线程可能没被回收，这样也就有可能会发生内存泄漏，ThreadLocal在设计的时候就提供了一些补救措施：</p>
+<ul>
+<li>Entry数组的key是弱引用的ThreadLocal对象，很容易被回收，导致key为null（但是value不为null），所以在调用get，set，remove的时候会自动清理key为null的Entry</li>
+<li>同时remove方法也是用来清理无用对象，防止内存泄漏的，所以每次用完ThreadLocal对象后需要手动调用remove方法。<br>有些文章认为是弱引用导致了内存泄漏，其实是不对的。假设把所有的弱引用都改成强引用，这样无用对象的key和value都不会为null，反而更不利于回收。只能通过调用remove方法手动清理，或者等待线程结束生命周期。也就是说ThreadLocalMap的生命周期由他的线程来决定，线程如果不中断，ThreadLocalMap就不会被GC回收，这才是ThreadLocal内存泄漏的真正原因。</li>
+</ul>
+<h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><ul>
+<li>维护JDBC的java.sql.Connection对象，因为每个线程都需要保持特定的Connection对象。</li>
+<li>Web开发时，有些信息需要从controller传到service传到dao，甚至传到util类。看起来非常不优雅，这时便可以使用ThreadLocal来优雅的实现。</li>
+<li>包括线程不安全的工具类，比如Random、SimpleDateFormat等</li>
+</ul>
+<h2 id="与synchronized的关系"><a href="#与synchronized的关系" class="headerlink" title="与synchronized的关系"></a>与synchronized的关系</h2><ul>
+<li>synchronized是同一时间最多只有一个线程执行，所以变量只需要存一份，是一种时间换空间的方式</li>
+<li>ThreadLocal是多个线程之间互不影响，所以每个线程存一份变量，是一种空间换时间的方式</li>
+</ul>
+]]></content>
   </entry>
   <entry>
     <title>查询占用端口</title>
