@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>查询占用端口</title>
+    <url>/2021/09/23/project/%E5%85%B3%E9%97%AD%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/</url>
+    <content><![CDATA[<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">-- 查询占用端口</span><br><span class="line">netstat -ano | <span class="built_in">findstr</span> <span class="number">8080</span> </span><br><span class="line">-- 关闭占用端口</span><br><span class="line"><span class="built_in">taskkill</span> /F /PID xxx</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>工具类信息</title>
+    <url>/2021/09/23/project/%E6%8E%92%E5%90%8D%E5%89%8D16%E7%9A%84java%E5%B7%A5%E5%85%B7%E7%B1%BB/</url>
+    <content><![CDATA[<ul>
+<li>org.apache.commons.io.IOUtils</li>
+<li>org.apache.commons.io.FileUtils</li>
+<li>org.apache.commons.lang.StringUtils</li>
+<li>org.apache.http.util.EntityUtils</li>
+<li>org.apache.commons.lang3.StringUtils</li>
+<li>org.apache.commons.io.FilenameUtils</li>
+<li>org.springframework.util.StringUtils</li>
+<li>org.apache.commons.lang.ArrayUtils</li>
+<li>org.apache.commons.lang.StringEscapeUtils</li>
+<li>org.apache.http.client.utils.URLEncodedUtils</li>
+<li>org.apache.commons.codec.digest.DigestUtils</li>
+<li>org.apache.commons.collections.CollectionUtils</li>
+<li>org.apache.commons.lang3.ArrayUtils</li>
+<li>org.apache.commons.beanutils.PropertyUtils</li>
+<li>org.apache.commons.lang3.StringEscapeUtils</li>
+<li>org.apache.commons.beanutils.BeanUtils</li>
+</ul>
+<p>在Java中，实用程序类是定义一组通用功能的方法的类。</p>
+<p>这篇文章展示了最常用的Java使用工具类及其常用的方法</p>
+<p>希望通过本篇文章可以使您受到相关启发，以便之后可以直接使用</p>
+<p><strong>org.apache.commons.io.IOUtils</strong><br>closeQuietly()<br>toString()<br>copy()<br>toByteArray()<br>write()<br>toInputStream()<br>readLines()<br>copyLarge()<br>lineInteator()<br>readFully()</p>
+<p><strong>org.apache.commons.io.FileUtils</strong><br>deleteDirectory()<br>readFileToString()<br>deleteQuietly()<br>copyFile()<br>wirteStringToFile()<br>forceMkdir()<br>write()<br>listFiles()<br>copyDirectory()<br>forceDelete()</p>
+<p><strong>org.apache.commons.lang.StringUtils</strong><br>isBlank()<br>isNotBlank()<br>isEmpty()<br>isNotEmpty()<br>equals()<br>join()<br>split()<br>Empty()<br>trimToNull()<br>replace()</p>
+<p><strong>org.apache.http.util.EntityUtils</strong><br>toString()<br>consume()<br>toByteArray()<br>consumeQuietly()<br>getContentCharSet()</p>
+<p><strong>org.apache.commons.lang3.StringUtils</strong><br>isBlank()<br>isNotBlank()<br>isEmpty()<br>isNotEmpty()<br>equals()<br>join()<br>split()<br>Empty()<br>replace()<br>capitalize()</p>
+<p><strong>org.apache.commons.io.FilenameUtils</strong><br>getExtension()<br>getBaseName()<br>getName()<br>concat()<br>removeExtension()<br>normalize()<br>wildcardMatch()<br>separatorsToUnix()<br>getFullPath()<br>isExtension()</p>
+<p><strong>org.springframework.util.StringUtils</strong><br>hasText()<br>hasLength()<br>isEmpty()<br>commaDelimitedListToStringArray()<br>collectionToDelimitedString()<br>replace()<br>delimitedListToStringArray()<br>uncapitalize()<br>collectionToCommaDelimitedString()</p>
+<p><strong>org.apache.commons.lang.ArrayUtils</strong><br>contains()<br>addAll()<br>clone()<br>isEmpty()<br>add()<br>EMPTY_BYTE_ARRAY<br>subarry()<br>indexof()<br>isEquals()<br>toObject()</p>
+<p><strong>org.apache.commons.lang.StringEscapeUtils</strong><br>escapeHtml()<br>unescapeHtml()<br>escapeXml()<br>escapeSql()<br>unescapeJava()<br>escapeJavascript()<br>unescapeXml()<br>unescapeJavascript()</p>
+<p><strong>org.apache.http.client.utils.URLEncodedUtils</strong><br>format()<br>parse()</p>
+<p><strong>org.apache.commons.codec.digest.DigestUtils</strong><br>md5Hex()<br>shaHex()<br>sha256Hex()<br>sha1Hex()<br>sha()<br>md5()<br>sha512Hex()<br>sha1()</p>
+<p><strong>org.apache.commons.collections.CollectionUtils</strong><br>isEmpty()<br>isNotEmpty()<br>select()<br>transform()<br>filter()<br>find()<br>collect()<br>forAllDo()<br>addAll()<br>isEqualCollection()</p>
+<p><strong>org.apache.commons.lang3.ArrayUtils</strong><br>contains()<br>isEmpty()<br>isNotEmpty()<br>add()<br>clone()<br>addAll()<br>subarray()<br>indexOf()<br>EMPTY_OBJECT_ARRAY<br>EMPTY_STRING_ARRAY</p>
+<p><strong>org.apache.commons.beanutils.PropertyUtils</strong><br>getProperty()<br>setProperty()<br>getPropertyDescriptors()<br>isReadable()<br>copyProperties()<br>getPropertyDescriptor()<br>getSimpleProperty()<br>isWriteable()<br>setSimpleProperty()<br>getPropertyType()</p>
+<p><strong>org.apache.commons.lang3.StringEscapeUtils</strong><br>unescapeHtml4()<br>escapeHtml4()<br>escapeXml()<br>unescapeXml()<br>escapeJava()<br>escapeEcmaScript()<br>unescapeJava()<br>escapeJson()<br>escapeXml10()</p>
+<p><strong>org.apache.commons.beanutils.BeanUtils</strong><br>copyProperties()<br>getProperty()<br>setProperty()<br>describe()<br>populate()<br>copyProperty()<br>cloneBean()</p>
+]]></content>
+  </entry>
+  <entry>
     <title>docker安装oracle</title>
     <url>/2021/09/27/Docker%E5%AE%89%E8%A3%85oracle/</url>
     <content><![CDATA[<ol>
@@ -31,6 +78,83 @@
         <tag>docker</tag>
         <tag>oracle</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>我们为什么要用IOC和AOP</title>
+    <url>/2021/09/23/categories/%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8IOC%E5%92%8CAOP/</url>
+    <content><![CDATA[<h1 id="我们为什么要用IOC和AOP"><a href="#我们为什么要用IOC和AOP" class="headerlink" title="我们为什么要用IOC和AOP"></a>我们为什么要用IOC和AOP</h1><p>作为一名java开发，对Spring框架是再熟悉不过了。Spring支持的<em><strong>控制反转</strong></em>（Inversion of Control，缩写为IOC）和<em><strong>面向切面编程</strong></em>（Aspect-oriented programming，缩写为AOP），早已成为我们的开发习惯，仿佛Java开发天生就是如此。</p>
+<p>人总是会忽略习以为常的东西，所有人都熟悉IOC和AOP，却鲜有人说得清楚到底为什么用IOC和AOP。</p>
+<p>技术肯定是为了解决某个问题而诞生的，要弄清楚为什么要使用IOC和AOP，就得先弄清楚不用他们会碰到什么问题。</p>
+<h2 id="IOC"><a href="#IOC" class="headerlink" title="IOC"></a>IOC</h2><p>我们现在假设回到了没有IOC的时代，用传统的Servlet开发。</p>
+<h3 id="传统开发模式的弊端"><a href="#传统开发模式的弊端" class="headerlink" title="传统开发模式的弊端"></a>传统开发模式的弊端</h3><hr>
+<p>三层架构是经典的开发模型，我们一般将视图控制、业务逻辑和数据操作分别抽离出来单独形成一个类，这样各个的职责就非常清晰且易于复用和维护，大致代码如下：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@WebServlet(&quot;/user&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserServlet</span> <span class="keyword">extends</span> <span class="title">HttpServlet</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 用于执行业务逻辑的对象</span></span><br><span class="line">    <span class="keyword">private</span> UserService userService = <span class="keyword">new</span> UserServiceImpl();</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">        <span class="comment">// ...省略其他代码</span></span><br><span class="line">            </span><br><span class="line">        <span class="comment">// 执行业务逻辑</span></span><br><span class="line">        userService.doService();</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// ...返回页面视图</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserServiceImpl</span> <span class="keyword">implements</span> <span class="title">UserService</span></span>&#123;</span><br><span class="line">    <span class="comment">// 用于操作数据库的对象</span></span><br><span class="line">    <span class="keyword">private</span> UserDao userDao = <span class="keyword">new</span> UserDaoImpl();</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doService</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="comment">// ...省略业务逻辑代码</span></span><br><span class="line">            </span><br><span class="line">        <span class="comment">// 执行数据库操作</span></span><br><span class="line">        userDao.doUpdate();</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// ...省略业务逻辑代码</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserDaoImpl</span> <span class="keyword">implements</span> <span class="title">UserDao</span></span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doUpdate</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="comment">// ...省略JDBC代码</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>上层依赖下层的抽象，代码就分为了三层：<img src="https://i.loli.net/2021/04/24/6fSkvJtPUOLrK3Q.png" alt="三层分离"><br>业界普遍按照这种方式组织代码，其核心思想是职责分离。层次越低复用性越高，比如一个DAO对象往往会被多个Service对象使用，一个Service对象往往也被多个Controller对象使用。<img src="https://i.loli.net/2021/04/24/8DrzEBpGmZQicjU.png" alt="代码复用"><br>条理分明，井然有序。这些被复用的对象就像一个个的组件，供多方使用</p>
+<p>虽然这个倒三角看上去非常漂亮，然而我们目前的代码有一个比较大的问题，那就是我们只做了<strong>逻辑复用</strong>，并没有做到<strong>资源复用</strong></p>
+<p>上层调用下层时，必然会持有下一层对象的引用，即成员变量。目前我们每一个成员变量都会实例化一个对象，如下图所示：<img src="https://i.loli.net/2021/04/24/z3UEH7Frf95hju4.png" alt="非资源性复用"></p>
+<p>每一个链路都创建了同样的对象，造成了极大的资源浪费。本应多个Controller复用同一个Service，多个Service复用一个DAO。现在编程了一个Controller创建了多个重复的Service，多个Service又创建了多个重复的DAO，从倒三角编程了正三角。</p>
+<p>许多组件只需要实例化一个对象就足够了，创建多个没有任何的意义。针对对象重复创建的问题，我们自然而然想到了单例模式。只要编写类的时候都将其写为单例，这样就避免了资源浪费。但是，引入设计模式必然会带来复杂性，况且还是每一个类都是单例，每一个类都会有相似的代码，其弊端不言而喻。</p>
+<p>有人可能会说，我不在意<strong><strong>资源浪费</strong></strong>，我服务器大内存大没关系，我只求开发便捷痛快不想写额外的代码。</p>
+<p>确实，三层架构达到逻辑复用已经很方便了，但是还是会存在一个致命的缺陷，那就是<strong>变化的代价太大</strong></p>
+<p>假设有10个Controller依赖了UserService，最开始实例化的是UserServiceImpl，后面需要换一个实现类OtherUserServiceImpl，我就得逐个修改那10个Controller，非常麻烦，但是对于更换实现类的需求不会可能太多，没有说服力，那就换一个情况。</p>
+<p>之前演示的组件创建过程非常简单，new一下就完了，可很多时候创建一个组件没那么简单，比如DAO对象要依赖这样的一个数据源组件：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserDaoImpl</span> <span class="keyword">implements</span> <span class="title">UserDao</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> MyDataSource dataSource;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">UserDaoImpl</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 构造数据源</span></span><br><span class="line">        dataSource = <span class="keyword">new</span> MyDataSource(<span class="string">&quot;jdbc:mysql://localhost:3306/test&quot;</span>, <span class="string">&quot;root&quot;</span>, <span class="string">&quot;password&quot;</span>);</span><br><span class="line">        <span class="comment">// 进行一些其他配置</span></span><br><span class="line">        dataSource.setInitiaSize(<span class="number">10</span>);</span><br><span class="line">        dataSource.setMaxActive(<span class="number">100</span>);</span><br><span class="line">        <span class="comment">// ...省略更多配置项</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>该数据源组件想要真正生效的时候需要对其进行许多的配置，这个创建和配置过程是非常麻烦的，而且配置可能会随着业务需求的变化而经常更改，这个时候就需要修改每一个依赖该组件的地方，牵一发而动全身，这还只是演示了一个数据源的创建和配置过程，真是开发中可有太多的组件和太多的配置需要设置了，其麻烦程度堪称恐怖。</p>
+<p>当然这些都可以引入设计模式来解决，不过这样又绕回去了，设计模式本身也会带来一定的复杂性，这样就进入了死循环，传统开发模式编码复杂，要解决这种复杂又得陷入另一种复杂中，难道没有其他方式吗？当然不是，在讲解决方案之前，我们先来梳理一下目前出现的问题。</p>
+<ul>
+<li>创建了许多重复的对象，造成大量资源浪费</li>
+<li>更换实现类需要改动很多的地方</li>
+<li>创建和配置工作繁杂，给组件调用带来了极大的不便</li>
+</ul>
+<p>通过现象来看本质，这些问题出现都是一个原因：<strong>组件的调用方式参数了组件的创建和配置工作</strong></p>
+<p>其实，调用方只需要关注组件如何调用，至于这个组件是如何创建和配置又与调用方有什么关系呢，就好比我去饭店吃饭，饭菜并不需要我亲自做，饭店自然会做好给我送过来。如果我们在编码时，有一个<strong>东西</strong>能帮助我们创建和配置好这些组件，我们只需负责调用就好了，这个<strong>东西</strong>就是<strong>容器</strong></p>
+<p>容器这个概念我们已经接触过，Tomcat就是一个Servlet容器，他帮我们创建并配置好了Servlet，我们只需要编写业务逻辑即可。试想一下，如果Servlet要我们自己创建，HttpRequest、HttpResponse对象也需要我们自己配置，那代码量就有点恐怖了。</p>
+<p>Tomcat是Servlet容器，值负责管理Servlet，我们平常使用的组件则需要另外一中容器来管理，这种容器我们称之为<strong>IOC容器</strong>。</p>
+<h3 id="控制反转和依赖注入"><a href="#控制反转和依赖注入" class="headerlink" title="控制反转和依赖注入"></a>控制反转和依赖注入</h3><p>控制反转，是指对象的创建和配置的控制权从调用方转移给了容器。好比在家做菜，菜的味道全部由自己掌控，而去餐馆吃饭，菜的味道由餐馆方掌控，IOC就相当于餐馆的角色</p>
+<p>有个IOC容器，我们可以将对象的创建交由容器管理，交由容器管理后的对象称为Bean，调用方不再负责组件的创建，要使用组件时直接获取Bean即可。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserServiceImpl</span> <span class="keyword">implements</span> <span class="title">UserService</span></span>&#123;</span><br><span class="line">    <span class="meta">@Autowired</span> <span class="comment">// 获取 Bean</span></span><br><span class="line">    <span class="keyword">private</span> UserDao userDao;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>调用方只需按照约定声明依赖项，所需要的的Bean就自动配置完毕了，就好像在调用方外部注入了一个依赖项给你使用，所以这种方式称之为<strong>依赖注入（Dependency Injection，缩写为DI）</strong>，就相当于你给钱，就可以点各种菜一样，给你做好送过来。<em><strong>控制反转和依赖注入是一体两面，都是同一种开发模式的表现形式。</strong></em></p>
+<p>IOC轻而易举的解决了我们刚刚总结的问题：</p>
+<ul>
+<li>对象交由容器管理后，默认是单例的，这就解决了资源浪费的问题。</li>
+<li>如要更换实现类，只需要更改Bean的声明即可，即可达到无感知更换。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserServiceImpl</span> <span class="keyword">implements</span> <span class="title">UserService</span></span>&#123;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 将该实现类声明为 Bean</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">OtherUserServiceImpl</span> <span class="keyword">implements</span> <span class="title">UserService</span></span>&#123;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>现在组件的使用和组件的创建与配置完全分离开来，调用方只需调用组件而无需关心其他工作，这极大提高了我们的开发效率，也让整个应用充满了灵活性，拓展性。</p>
+<p>这样看来，我们中意IOC不是没有道理的。</p>
+<h3 id="AOP"><a href="#AOP" class="headerlink" title="AOP"></a>AOP</h3><p>我们再来看没有AOP会怎样。</p>
+<h3 id="面向对象的局限性"><a href="#面向对象的局限性" class="headerlink" title="面向对象的局限性"></a>面向对象的局限性</h3><p>对象对象编程（Object-oriented programming，缩写OOP）三大特性：集成，封装，多态，我们已经使用的炉火纯青，OOP的好处无需累赘，大家都深有体会，我们在来看下OOP的局限性</p>
+<p>当有重复代码时，可以将其封装出来然后使用，我们通过分层，分包，分类来规划不同的逻辑和职责，就像前面讲的三层架构，但这里的复用都是<em><strong>核心业务逻辑</strong></em>，并不能复用一些<strong>辅助逻辑</strong>，比如：日志记录，性能统计，安全校验，事务管理等等，这些边缘性逻辑往往贯穿你的整个核心业务，传统OOP很难将其封装。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserServiceImpl</span> <span class="keyword">implements</span> <span class="title">UserService</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doService</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;---安全校验---&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;---性能统计 Start---&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;---日志打印 Start---&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;---事务管理 Start---&quot;</span>);</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">&quot;业务逻辑&quot;</span>);</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">&quot;---事务管理 End---&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;---日志打印 End---&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;---性能统计 End---&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>为了方便演示，我们只打印语句，就算如此这样的代码看着也很难受，而且这些逻辑是所有的业务方法都要加上，想想就很恐怖</p>
+<p>OOP是至上而下的编程方式，犹如一个树状图，A调用B，B调用C，或者A继承B，B继承C，这种方式对于业务逻辑来说是合适的，通过调用或者继承以复用。而辅助逻辑就像一把闸刀横向贯穿了所有方法，如图所示：<img src="https://i.loli.net/2021/04/24/kGZqm9oYFBUa4Vb.png" alt="AOP"><br>这一条条横线切开了OOP的树状结构，犹如一个大蛋糕被切开了多层，每一层都有相同的执行逻辑，所以大家将这些辅助逻辑称之为切面</p>
+<p>代理模式用来增加或者增强原有功能在合适不过了，但是切面逻辑的难点不是<strong>不修改原有的业务</strong>，而是对所有业务生效，对一个业务类增强就得新建一个代理类，对所有业务增强就得新建所有代理类，这无疑是一种灾难，而且这里只是演示了一个日志打印的切面逻辑，如果我在加一个性能统计的切面，就得新建一个切面类来代理性能统计的代理类，一旦切面多起来这个代理嵌套就非常深。</p>
+<p>面向切面编程（Aspect-oriented programming，缩写为AOP），正式为了解决这一问题而诞生的。</p>
+<h3 id="AOP-1"><a href="#AOP-1" class="headerlink" title="AOP"></a>AOP</h3><p>AOP不是OOP的对立面，而是对OOP的一种补充，OOP是纵向的，AOP是横向的，连着相结合能够构建良好的程序结构，AOP技术，<em><strong>让我们不修改原有的代码，便能让切面逻辑在所有的业务逻辑中生效</strong></em></p>
+<p>我们只需要声明一个切面，写上切面逻辑：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Aspect</span> <span class="comment">// 声明一个切面</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyAspect</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 原业务方法执行前</span></span><br><span class="line">    <span class="meta">@Before(&quot;execution(public void com.rudecrab.test.service.*.doService())&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">methodBefore</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;===AspectJ 方法执行前===&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 原业务方法执行后</span></span><br><span class="line">    <span class="meta">@AfterReturning(&quot;execution(* com.rudecrab.test.service..doService(..))&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">methodAddAfterReturning</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;===AspectJ 方法执行后===&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>无论你有一个业务方法，还是一万个业务方法，对我们开发者来说只需编写一次切面逻辑，就能让所有业务方法生效，极大提高了我们的开发效率。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>IOC解决的问题：</p>
+<ul>
+<li>创建许多重复的对象，造成了大量资源浪费</li>
+<li>更换实现类需要改动多个地方</li>
+<li>创建和配置组件工作复杂，给组件调用方带来了极大的不便</li>
+</ul>
+<p>AOP解决的问题：</p>
+<ul>
+<li>切面逻辑编写繁琐，有多个业务就需要编写多少次。</li>
+</ul>
+]]></content>
   </entry>
   <entry>
     <title>Thread.sleep(0)的作用</title>
@@ -79,6 +203,88 @@
 <p>在线程没退出前，线程有三个状态：就绪，运行，等待。sleep(n)之所以在n毫秒内不会参与cpu的竞争，是因为当调用sleep(n)的时候，线程由运行态转换为等待状态，线程被放入等待队列，等待定时器n毫秒之后，线程就会从等到状态转换为就绪状态，被放入就绪队列，等待队列的线程是不会参与cpu竞争的，只有就绪状态的线程才会参与cpu的竞争，所谓的调度就是根据一定的算法，从就绪队列中选择一个线程来执行。</p>
 <p>而sleep(0)之所以会马上参与cpu竞争，只因为调用sleep(0)后，因为0的原因，线程直接回到就绪状态，只要进入就绪状态，就会参与cpu竞争。</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>ThreadLocal是什么</title>
+    <url>/2021/09/23/series/ThreadLocal%E6%98%AF%E4%BB%80%E4%B9%88/</url>
+    <content><![CDATA[<h1 id="ThreadLocal是什么？怎么用？为什么要用？他有什么缺点？如何避免"><a href="#ThreadLocal是什么？怎么用？为什么要用？他有什么缺点？如何避免" class="headerlink" title="ThreadLocal是什么？怎么用？为什么要用？他有什么缺点？如何避免"></a>ThreadLocal是什么？怎么用？为什么要用？他有什么缺点？如何避免</h1><h2 id="ThreadLocal是什么"><a href="#ThreadLocal是什么" class="headerlink" title="ThreadLocal是什么"></a>ThreadLocal是什么</h2><p>在了解ThreadLocal之前，我们先了解下什么是线程封闭</p>
+<blockquote>
+<p>把对象封闭在一个线程里，即使这个对象不是线程安全的，也不会出现并发安全问题</p>
+</blockquote>
+<p><strong>实现线程封闭大致有三种方式：</strong></p>
+<ol>
+<li>栈封闭：就是用栈（stack）来保证线程安全</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testThread</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    StringBuilder sb = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">    sb.append(<span class="string">&quot;Hello&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>StringBuilder不是线程安全的，但是他只是个<em><strong>局部变量</strong></em>，<em><strong>局部变量</strong></em>是存储在<em><strong>虚拟机栈</strong></em>的，<em><strong>虚拟机栈</strong></em>是线程隔离的，所以不会有线程安全问题。</p>
+<ol start="2">
+<li>Ad-hoc线程封闭：维护线程封闭性的职责完全有线程来承担，不推荐使用。</li>
+<li>ThreadLocal线程封闭，简单易用</li>
+</ol>
+<p>第三种方式就是使用ThreadLocal来实现线程封闭，线程封闭的指导思想是封闭，而不是共享。所以说ThreadLocal是用来解决变量共享的并发安全问题，是有些不精确的。</p>
+<p>其实，从JDK1.2开始，提供的ThreadLocal使用就非常简单：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ThreadLocalDemo</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">final</span> ThreadLocal&lt;String&gt; threadLocal = <span class="keyword">new</span> ThreadLocal&lt;&gt;();</span><br><span class="line">        threadLocal.set(<span class="string">&quot;main-thread : Hello&quot;</span>);</span><br><span class="line">        </span><br><span class="line">        Thread thread = <span class="keyword">new</span> Thread(() -&gt; &#123;</span><br><span class="line">            <span class="comment">// 获取不到主线程设置的值，所以为null</span></span><br><span class="line">            System.out.println(threadLocal.get());</span><br><span class="line">            threadLocal.set(<span class="string">&quot;sub-thread : World&quot;</span>);</span><br><span class="line">            System.out.println(threadLocal.get());</span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="comment">// 启动子线程</span></span><br><span class="line">        thread.start();</span><br><span class="line">        <span class="comment">// 让子线程先执行完成，再继续执行主线</span></span><br><span class="line">        thread.join();</span><br><span class="line">        <span class="comment">// 获取到的是主线程设置的值，而不是子线程设置的</span></span><br><span class="line">        System.out.println(threadLocal.get());</span><br><span class="line">        threadLocal.remove();</span><br><span class="line">        System.out.println(threadLocal.get());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">null</span><br><span class="line">sub-thread : World</span><br><span class="line">main-thread : Hello</span><br><span class="line">null</span><br></pre></td></tr></table></figure>
+
+<p>运行结果说明了ThreadLocal只能获取本线程设置的值，这也体现了线程封闭的问思想。基本上，ThreadLocal对外提供的方法只有三个，get()，set(T)，remove()。</p>
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>使用方式非常简单，所以我们看下ThreadLocal的源码，ThreadLocal内部定义了一个静态ThreadLocalMap类，ThreadLocalMap内部又定义了一个Entry类，这里只看一些比较重要的属性和方法。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ThreadLocal</span>&lt;<span class="title">T</span>&gt; </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> T <span class="title">get</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Thread t = Thread.currentThread();</span><br><span class="line">        ThreadLocalMap map = getMap(t);</span><br><span class="line">        <span class="keyword">if</span> (map != <span class="keyword">null</span>) &#123;</span><br><span class="line">            ThreadLocalMap.Entry e = map.getEntry(<span class="keyword">this</span>);</span><br><span class="line">            <span class="keyword">if</span> (e != <span class="keyword">null</span>) &#123;</span><br><span class="line">                <span class="meta">@SuppressWarnings(&quot;unchecked&quot;)</span></span><br><span class="line">                T result = (T)e.value;</span><br><span class="line">                <span class="keyword">return</span> result;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> setInitialValue();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">set</span><span class="params">(T value)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//获取当前线程对象</span></span><br><span class="line">        Thread t = Thread.currentThread();</span><br><span class="line">        <span class="comment">//根据当前线程对象获取ThreadLocalMap（ThreadLocalMap被Thread（线程）所持有）</span></span><br><span class="line">        ThreadLocalMap map = getMap(t);</span><br><span class="line">        <span class="comment">//如果ThreadLocalMap存在，则直接插入，不存在则新建ThreadLocalMap</span></span><br><span class="line">        <span class="keyword">if</span> (map != <span class="keyword">null</span>)</span><br><span class="line">            map.set(<span class="keyword">this</span>, value);</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            createMap(t, value);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">remove</span><span class="params">()</span> </span>&#123;</span><br><span class="line">         ThreadLocalMap m = getMap(Thread.currentThread());</span><br><span class="line">         <span class="keyword">if</span> (m != <span class="keyword">null</span>)</span><br><span class="line">             m.remove(<span class="keyword">this</span>);</span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line"> <span class="comment">// 从这里可以看出ThreadLocalMap对象是被Thread类持有的</span></span><br><span class="line">    <span class="function">ThreadLocalMap <span class="title">getMap</span><span class="params">(Thread t)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> t.threadLocals;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">createMap</span><span class="params">(Thread t, T firstValue)</span> </span>&#123;</span><br><span class="line">        t.threadLocals = <span class="keyword">new</span> ThreadLocalMap(<span class="keyword">this</span>, firstValue);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"> <span class="comment">// 内部类ThreadLocalMap</span></span><br><span class="line">    <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">ThreadLocalMap</span> </span>&#123;</span><br><span class="line">        <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">Entry</span> <span class="keyword">extends</span> <span class="title">WeakReference</span>&lt;<span class="title">ThreadLocal</span>&lt;?&gt;&gt; </span>&#123;</span><br><span class="line">            Object value;</span><br><span class="line">   <span class="comment">// 内部类Entity，实际存储数据的地方</span></span><br><span class="line">   <span class="comment">// Entry的key是ThreadLocal对象，不是当前线程ID或者名称</span></span><br><span class="line">            Entry(ThreadLocal&lt;?&gt; k, Object v) &#123;</span><br><span class="line">                <span class="keyword">super</span>(k);</span><br><span class="line">                value = v;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">  <span class="comment">// 注意这里维护的是Entry数组</span></span><br><span class="line">        <span class="keyword">private</span> Entry[] table;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>根据上面的源码，大致画出ThreadLocal在虚拟机中的内存结构：<br><img src="https://i.loli.net/2021/04/29/jtYPu13X2xZyKMh.png" alt="ThreadLocal内存结构">  </p>
+<p>实箭头表示强引用，虚箭头表示弱引用，需要注意的是：</p>
+<ul>
+<li>ThreadLocalmap虽然是在ThreadLocal中定义的，但是实际上被Thread（当前线程）所持有</li>
+<li>Entry的key是ThreadLocal对象，而不是当前线程的ID或者线程名称。</li>
+<li>ThreadLocalMap持有的是Entry数组，而不是Entry实例</li>
+</ul>
+<p>对于第一点，ThreadLocalMap对象被hread(线程)所持有，是为了实现每个线程都有自己独立的ThreadLocalMap对象，以此为基础，做到线程的隔离，第二点和第三点，我们先来想一个问题，如果一个线程中定义了多个ThreadLocal对象，内存结构应该如何，在此之前，我们先看set方法的源码：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">set</span><span class="params">(T value)</span> </span>&#123;</span><br><span class="line">   <span class="comment">// 获取当前线程对象</span></span><br><span class="line">     Thread t = Thread.currentThread();</span><br><span class="line">     <span class="comment">// 根据线程对象获取ThreadLocalMap对象（ThreadLocalMap被Thread持有）</span></span><br><span class="line">     ThreadLocalMap map = getMap(t);</span><br><span class="line">     <span class="comment">// 如果ThreadLocalMap存在，则直接插入；不存在，则新建ThreadLocalMap</span></span><br><span class="line">     <span class="keyword">if</span> (map != <span class="keyword">null</span>)</span><br><span class="line">         map.set(<span class="keyword">this</span>, value);</span><br><span class="line">     <span class="keyword">else</span></span><br><span class="line">         createMap(t, value);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>也就是说，如果程序定义了多个ThreadLocal对象的话，并不会创建多个ThreadLocalMap对象，而会共用一个ThreadLocalMap对象，所以内存结构应该是这样：<br><img src="https://i.loli.net/2021/04/29/qGNm1PfK2MwBTaX.png" alt="内存结构">  </p>
+<p>这个内存结构解释了第二点和第三点，如果Entry中的key是当前线程的ID或者名称的话，那么程序中定义多个ThreadLocal对象的时，Entry数组中的所有的Entry的key都一样（因为他们处于同一个线程中），或者说他们只能存一个value，ThreadLocalMap中持有的时Entry数组，而不是Entry，则是因为程序可以定义多个ThreadLocal对象，自然而然需要一个数组来存储。</p>
+<h2 id="内存泄漏"><a href="#内存泄漏" class="headerlink" title="内存泄漏"></a>内存泄漏</h2><h4 id="ThreadLocal会发生内存泄漏吗？"><a href="#ThreadLocal会发生内存泄漏吗？" class="headerlink" title="ThreadLocal会发生内存泄漏吗？"></a>ThreadLocal会发生内存泄漏吗？</h4><blockquote>
+<p>会</p>
+</blockquote>
+<p>因为Entry数组通过ThreadLocalMap最终被Thread持有，并且是强引用，也就是说Entry数组对象的生命周期和当前线程是一样的，即使ThreadLocal对象被回收了，Entry数组也不一定会被回收，因为线程可能没被回收，这样也就有可能会发生内存泄漏，ThreadLocal在设计的时候就提供了一些补救措施：</p>
+<ul>
+<li>Entry数组的key是弱引用的ThreadLocal对象，很容易被回收，导致key为null（但是value不为null），所以在调用get，set，remove的时候会自动清理key为null的Entry</li>
+<li>同时remove方法也是用来清理无用对象，防止内存泄漏的，所以每次用完ThreadLocal对象后需要手动调用remove方法。<br>有些文章认为是弱引用导致了内存泄漏，其实是不对的。假设把所有的弱引用都改成强引用，这样无用对象的key和value都不会为null，反而更不利于回收。只能通过调用remove方法手动清理，或者等待线程结束生命周期。也就是说ThreadLocalMap的生命周期由他的线程来决定，线程如果不中断，ThreadLocalMap就不会被GC回收，这才是ThreadLocal内存泄漏的真正原因。</li>
+</ul>
+<h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><ul>
+<li>维护JDBC的java.sql.Connection对象，因为每个线程都需要保持特定的Connection对象。</li>
+<li>Web开发时，有些信息需要从controller传到service传到dao，甚至传到util类。看起来非常不优雅，这时便可以使用ThreadLocal来优雅的实现。</li>
+<li>包括线程不安全的工具类，比如Random、SimpleDateFormat等</li>
+</ul>
+<h2 id="与synchronized的关系"><a href="#与synchronized的关系" class="headerlink" title="与synchronized的关系"></a>与synchronized的关系</h2><ul>
+<li>synchronized是同一时间最多只有一个线程执行，所以变量只需要存一份，是一种时间换空间的方式</li>
+<li>ThreadLocal是多个线程之间互不影响，所以每个线程存一份变量，是一种空间换时间的方式</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>mysql优化</title>
+    <url>/2021/09/23/mysql/mysql%E4%BC%98%E5%8C%96/</url>
+    <content><![CDATA[<h1 id="mysql优化"><a href="#mysql优化" class="headerlink" title="mysql优化"></a>mysql优化</h1><p>关于索引结构：</p>
+<ol>
+<li>二叉树</li>
+<li>红黑树（二叉平衡树）</li>
+<li>hash索引</li>
+<li>b树</li>
+<li>b+树</li>
+</ol>
+]]></content>
+      <categories>
+        <category>数据库</category>
+        <category>优化</category>
+        <category>MYSQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+        <tag>调优</tag>
+      </tags>
   </entry>
   <entry>
     <title>mysql的21个好习惯</title>
@@ -269,213 +475,9 @@
 ]]></content>
       <categories>
         <category>数据库</category>
-        <category>习惯</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>mysql优化</title>
-    <url>/2021/09/23/mysql/mysql%E4%BC%98%E5%8C%96/</url>
-    <content><![CDATA[<h1 id="mysql优化"><a href="#mysql优化" class="headerlink" title="mysql优化"></a>mysql优化</h1><p>关于索引结构：</p>
-<ol>
-<li>二叉树</li>
-<li>红黑树（二叉平衡树）</li>
-<li>hash索引</li>
-<li>b树</li>
-<li>b+树</li>
-</ol>
-]]></content>
-      <categories>
-        <category>数据库</category>
         <category>优化</category>
+        <category>MYSQL</category>
       </categories>
-      <tags>
-        <tag>MySQL</tag>
-        <tag>调优</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ThreadLocal是什么</title>
-    <url>/2021/09/23/series/ThreadLocal%E6%98%AF%E4%BB%80%E4%B9%88/</url>
-    <content><![CDATA[<h1 id="ThreadLocal是什么？怎么用？为什么要用？他有什么缺点？如何避免"><a href="#ThreadLocal是什么？怎么用？为什么要用？他有什么缺点？如何避免" class="headerlink" title="ThreadLocal是什么？怎么用？为什么要用？他有什么缺点？如何避免"></a>ThreadLocal是什么？怎么用？为什么要用？他有什么缺点？如何避免</h1><h2 id="ThreadLocal是什么"><a href="#ThreadLocal是什么" class="headerlink" title="ThreadLocal是什么"></a>ThreadLocal是什么</h2><p>在了解ThreadLocal之前，我们先了解下什么是线程封闭</p>
-<blockquote>
-<p>把对象封闭在一个线程里，即使这个对象不是线程安全的，也不会出现并发安全问题</p>
-</blockquote>
-<p><strong>实现线程封闭大致有三种方式：</strong></p>
-<ol>
-<li>栈封闭：就是用栈（stack）来保证线程安全</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testThread</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    StringBuilder sb = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">    sb.append(<span class="string">&quot;Hello&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>StringBuilder不是线程安全的，但是他只是个<em><strong>局部变量</strong></em>，<em><strong>局部变量</strong></em>是存储在<em><strong>虚拟机栈</strong></em>的，<em><strong>虚拟机栈</strong></em>是线程隔离的，所以不会有线程安全问题。</p>
-<ol start="2">
-<li>Ad-hoc线程封闭：维护线程封闭性的职责完全有线程来承担，不推荐使用。</li>
-<li>ThreadLocal线程封闭，简单易用</li>
-</ol>
-<p>第三种方式就是使用ThreadLocal来实现线程封闭，线程封闭的指导思想是封闭，而不是共享。所以说ThreadLocal是用来解决变量共享的并发安全问题，是有些不精确的。</p>
-<p>其实，从JDK1.2开始，提供的ThreadLocal使用就非常简单：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ThreadLocalDemo</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">final</span> ThreadLocal&lt;String&gt; threadLocal = <span class="keyword">new</span> ThreadLocal&lt;&gt;();</span><br><span class="line">        threadLocal.set(<span class="string">&quot;main-thread : Hello&quot;</span>);</span><br><span class="line">        </span><br><span class="line">        Thread thread = <span class="keyword">new</span> Thread(() -&gt; &#123;</span><br><span class="line">            <span class="comment">// 获取不到主线程设置的值，所以为null</span></span><br><span class="line">            System.out.println(threadLocal.get());</span><br><span class="line">            threadLocal.set(<span class="string">&quot;sub-thread : World&quot;</span>);</span><br><span class="line">            System.out.println(threadLocal.get());</span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="comment">// 启动子线程</span></span><br><span class="line">        thread.start();</span><br><span class="line">        <span class="comment">// 让子线程先执行完成，再继续执行主线</span></span><br><span class="line">        thread.join();</span><br><span class="line">        <span class="comment">// 获取到的是主线程设置的值，而不是子线程设置的</span></span><br><span class="line">        System.out.println(threadLocal.get());</span><br><span class="line">        threadLocal.remove();</span><br><span class="line">        System.out.println(threadLocal.get());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">null</span><br><span class="line">sub-thread : World</span><br><span class="line">main-thread : Hello</span><br><span class="line">null</span><br></pre></td></tr></table></figure>
-
-<p>运行结果说明了ThreadLocal只能获取本线程设置的值，这也体现了线程封闭的问思想。基本上，ThreadLocal对外提供的方法只有三个，get()，set(T)，remove()。</p>
-<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>使用方式非常简单，所以我们看下ThreadLocal的源码，ThreadLocal内部定义了一个静态ThreadLocalMap类，ThreadLocalMap内部又定义了一个Entry类，这里只看一些比较重要的属性和方法。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ThreadLocal</span>&lt;<span class="title">T</span>&gt; </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> T <span class="title">get</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Thread t = Thread.currentThread();</span><br><span class="line">        ThreadLocalMap map = getMap(t);</span><br><span class="line">        <span class="keyword">if</span> (map != <span class="keyword">null</span>) &#123;</span><br><span class="line">            ThreadLocalMap.Entry e = map.getEntry(<span class="keyword">this</span>);</span><br><span class="line">            <span class="keyword">if</span> (e != <span class="keyword">null</span>) &#123;</span><br><span class="line">                <span class="meta">@SuppressWarnings(&quot;unchecked&quot;)</span></span><br><span class="line">                T result = (T)e.value;</span><br><span class="line">                <span class="keyword">return</span> result;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> setInitialValue();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">set</span><span class="params">(T value)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//获取当前线程对象</span></span><br><span class="line">        Thread t = Thread.currentThread();</span><br><span class="line">        <span class="comment">//根据当前线程对象获取ThreadLocalMap（ThreadLocalMap被Thread（线程）所持有）</span></span><br><span class="line">        ThreadLocalMap map = getMap(t);</span><br><span class="line">        <span class="comment">//如果ThreadLocalMap存在，则直接插入，不存在则新建ThreadLocalMap</span></span><br><span class="line">        <span class="keyword">if</span> (map != <span class="keyword">null</span>)</span><br><span class="line">            map.set(<span class="keyword">this</span>, value);</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            createMap(t, value);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">remove</span><span class="params">()</span> </span>&#123;</span><br><span class="line">         ThreadLocalMap m = getMap(Thread.currentThread());</span><br><span class="line">         <span class="keyword">if</span> (m != <span class="keyword">null</span>)</span><br><span class="line">             m.remove(<span class="keyword">this</span>);</span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line"> <span class="comment">// 从这里可以看出ThreadLocalMap对象是被Thread类持有的</span></span><br><span class="line">    <span class="function">ThreadLocalMap <span class="title">getMap</span><span class="params">(Thread t)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> t.threadLocals;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">createMap</span><span class="params">(Thread t, T firstValue)</span> </span>&#123;</span><br><span class="line">        t.threadLocals = <span class="keyword">new</span> ThreadLocalMap(<span class="keyword">this</span>, firstValue);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"> <span class="comment">// 内部类ThreadLocalMap</span></span><br><span class="line">    <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">ThreadLocalMap</span> </span>&#123;</span><br><span class="line">        <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">Entry</span> <span class="keyword">extends</span> <span class="title">WeakReference</span>&lt;<span class="title">ThreadLocal</span>&lt;?&gt;&gt; </span>&#123;</span><br><span class="line">            Object value;</span><br><span class="line">   <span class="comment">// 内部类Entity，实际存储数据的地方</span></span><br><span class="line">   <span class="comment">// Entry的key是ThreadLocal对象，不是当前线程ID或者名称</span></span><br><span class="line">            Entry(ThreadLocal&lt;?&gt; k, Object v) &#123;</span><br><span class="line">                <span class="keyword">super</span>(k);</span><br><span class="line">                value = v;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">  <span class="comment">// 注意这里维护的是Entry数组</span></span><br><span class="line">        <span class="keyword">private</span> Entry[] table;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>根据上面的源码，大致画出ThreadLocal在虚拟机中的内存结构：<br><img src="https://i.loli.net/2021/04/29/jtYPu13X2xZyKMh.png" alt="ThreadLocal内存结构">  </p>
-<p>实箭头表示强引用，虚箭头表示弱引用，需要注意的是：</p>
-<ul>
-<li>ThreadLocalmap虽然是在ThreadLocal中定义的，但是实际上被Thread（当前线程）所持有</li>
-<li>Entry的key是ThreadLocal对象，而不是当前线程的ID或者线程名称。</li>
-<li>ThreadLocalMap持有的是Entry数组，而不是Entry实例</li>
-</ul>
-<p>对于第一点，ThreadLocalMap对象被hread(线程)所持有，是为了实现每个线程都有自己独立的ThreadLocalMap对象，以此为基础，做到线程的隔离，第二点和第三点，我们先来想一个问题，如果一个线程中定义了多个ThreadLocal对象，内存结构应该如何，在此之前，我们先看set方法的源码：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">set</span><span class="params">(T value)</span> </span>&#123;</span><br><span class="line">   <span class="comment">// 获取当前线程对象</span></span><br><span class="line">     Thread t = Thread.currentThread();</span><br><span class="line">     <span class="comment">// 根据线程对象获取ThreadLocalMap对象（ThreadLocalMap被Thread持有）</span></span><br><span class="line">     ThreadLocalMap map = getMap(t);</span><br><span class="line">     <span class="comment">// 如果ThreadLocalMap存在，则直接插入；不存在，则新建ThreadLocalMap</span></span><br><span class="line">     <span class="keyword">if</span> (map != <span class="keyword">null</span>)</span><br><span class="line">         map.set(<span class="keyword">this</span>, value);</span><br><span class="line">     <span class="keyword">else</span></span><br><span class="line">         createMap(t, value);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-
-<p>也就是说，如果程序定义了多个ThreadLocal对象的话，并不会创建多个ThreadLocalMap对象，而会共用一个ThreadLocalMap对象，所以内存结构应该是这样：<br><img src="https://i.loli.net/2021/04/29/qGNm1PfK2MwBTaX.png" alt="内存结构">  </p>
-<p>这个内存结构解释了第二点和第三点，如果Entry中的key是当前线程的ID或者名称的话，那么程序中定义多个ThreadLocal对象的时，Entry数组中的所有的Entry的key都一样（因为他们处于同一个线程中），或者说他们只能存一个value，ThreadLocalMap中持有的时Entry数组，而不是Entry，则是因为程序可以定义多个ThreadLocal对象，自然而然需要一个数组来存储。</p>
-<h2 id="内存泄漏"><a href="#内存泄漏" class="headerlink" title="内存泄漏"></a>内存泄漏</h2><h4 id="ThreadLocal会发生内存泄漏吗？"><a href="#ThreadLocal会发生内存泄漏吗？" class="headerlink" title="ThreadLocal会发生内存泄漏吗？"></a>ThreadLocal会发生内存泄漏吗？</h4><blockquote>
-<p>会</p>
-</blockquote>
-<p>因为Entry数组通过ThreadLocalMap最终被Thread持有，并且是强引用，也就是说Entry数组对象的生命周期和当前线程是一样的，即使ThreadLocal对象被回收了，Entry数组也不一定会被回收，因为线程可能没被回收，这样也就有可能会发生内存泄漏，ThreadLocal在设计的时候就提供了一些补救措施：</p>
-<ul>
-<li>Entry数组的key是弱引用的ThreadLocal对象，很容易被回收，导致key为null（但是value不为null），所以在调用get，set，remove的时候会自动清理key为null的Entry</li>
-<li>同时remove方法也是用来清理无用对象，防止内存泄漏的，所以每次用完ThreadLocal对象后需要手动调用remove方法。<br>有些文章认为是弱引用导致了内存泄漏，其实是不对的。假设把所有的弱引用都改成强引用，这样无用对象的key和value都不会为null，反而更不利于回收。只能通过调用remove方法手动清理，或者等待线程结束生命周期。也就是说ThreadLocalMap的生命周期由他的线程来决定，线程如果不中断，ThreadLocalMap就不会被GC回收，这才是ThreadLocal内存泄漏的真正原因。</li>
-</ul>
-<h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><ul>
-<li>维护JDBC的java.sql.Connection对象，因为每个线程都需要保持特定的Connection对象。</li>
-<li>Web开发时，有些信息需要从controller传到service传到dao，甚至传到util类。看起来非常不优雅，这时便可以使用ThreadLocal来优雅的实现。</li>
-<li>包括线程不安全的工具类，比如Random、SimpleDateFormat等</li>
-</ul>
-<h2 id="与synchronized的关系"><a href="#与synchronized的关系" class="headerlink" title="与synchronized的关系"></a>与synchronized的关系</h2><ul>
-<li>synchronized是同一时间最多只有一个线程执行，所以变量只需要存一份，是一种时间换空间的方式</li>
-<li>ThreadLocal是多个线程之间互不影响，所以每个线程存一份变量，是一种空间换时间的方式</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>查询占用端口</title>
-    <url>/2021/09/23/project/%E5%85%B3%E9%97%AD%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/</url>
-    <content><![CDATA[<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">-- 查询占用端口</span><br><span class="line">netstat -ano | <span class="built_in">findstr</span> <span class="number">8080</span> </span><br><span class="line">-- 关闭占用端口</span><br><span class="line"><span class="built_in">taskkill</span> /F /PID xxx</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
-    <title>工具类信息</title>
-    <url>/2021/09/23/project/%E6%8E%92%E5%90%8D%E5%89%8D16%E7%9A%84java%E5%B7%A5%E5%85%B7%E7%B1%BB/</url>
-    <content><![CDATA[<ul>
-<li>org.apache.commons.io.IOUtils</li>
-<li>org.apache.commons.io.FileUtils</li>
-<li>org.apache.commons.lang.StringUtils</li>
-<li>org.apache.http.util.EntityUtils</li>
-<li>org.apache.commons.lang3.StringUtils</li>
-<li>org.apache.commons.io.FilenameUtils</li>
-<li>org.springframework.util.StringUtils</li>
-<li>org.apache.commons.lang.ArrayUtils</li>
-<li>org.apache.commons.lang.StringEscapeUtils</li>
-<li>org.apache.http.client.utils.URLEncodedUtils</li>
-<li>org.apache.commons.codec.digest.DigestUtils</li>
-<li>org.apache.commons.collections.CollectionUtils</li>
-<li>org.apache.commons.lang3.ArrayUtils</li>
-<li>org.apache.commons.beanutils.PropertyUtils</li>
-<li>org.apache.commons.lang3.StringEscapeUtils</li>
-<li>org.apache.commons.beanutils.BeanUtils</li>
-</ul>
-<p>在Java中，实用程序类是定义一组通用功能的方法的类。</p>
-<p>这篇文章展示了最常用的Java使用工具类及其常用的方法</p>
-<p>希望通过本篇文章可以使您受到相关启发，以便之后可以直接使用</p>
-<p><strong>org.apache.commons.io.IOUtils</strong><br>closeQuietly()<br>toString()<br>copy()<br>toByteArray()<br>write()<br>toInputStream()<br>readLines()<br>copyLarge()<br>lineInteator()<br>readFully()</p>
-<p><strong>org.apache.commons.io.FileUtils</strong><br>deleteDirectory()<br>readFileToString()<br>deleteQuietly()<br>copyFile()<br>wirteStringToFile()<br>forceMkdir()<br>write()<br>listFiles()<br>copyDirectory()<br>forceDelete()</p>
-<p><strong>org.apache.commons.lang.StringUtils</strong><br>isBlank()<br>isNotBlank()<br>isEmpty()<br>isNotEmpty()<br>equals()<br>join()<br>split()<br>Empty()<br>trimToNull()<br>replace()</p>
-<p><strong>org.apache.http.util.EntityUtils</strong><br>toString()<br>consume()<br>toByteArray()<br>consumeQuietly()<br>getContentCharSet()</p>
-<p><strong>org.apache.commons.lang3.StringUtils</strong><br>isBlank()<br>isNotBlank()<br>isEmpty()<br>isNotEmpty()<br>equals()<br>join()<br>split()<br>Empty()<br>replace()<br>capitalize()</p>
-<p><strong>org.apache.commons.io.FilenameUtils</strong><br>getExtension()<br>getBaseName()<br>getName()<br>concat()<br>removeExtension()<br>normalize()<br>wildcardMatch()<br>separatorsToUnix()<br>getFullPath()<br>isExtension()</p>
-<p><strong>org.springframework.util.StringUtils</strong><br>hasText()<br>hasLength()<br>isEmpty()<br>commaDelimitedListToStringArray()<br>collectionToDelimitedString()<br>replace()<br>delimitedListToStringArray()<br>uncapitalize()<br>collectionToCommaDelimitedString()</p>
-<p><strong>org.apache.commons.lang.ArrayUtils</strong><br>contains()<br>addAll()<br>clone()<br>isEmpty()<br>add()<br>EMPTY_BYTE_ARRAY<br>subarry()<br>indexof()<br>isEquals()<br>toObject()</p>
-<p><strong>org.apache.commons.lang.StringEscapeUtils</strong><br>escapeHtml()<br>unescapeHtml()<br>escapeXml()<br>escapeSql()<br>unescapeJava()<br>escapeJavascript()<br>unescapeXml()<br>unescapeJavascript()</p>
-<p><strong>org.apache.http.client.utils.URLEncodedUtils</strong><br>format()<br>parse()</p>
-<p><strong>org.apache.commons.codec.digest.DigestUtils</strong><br>md5Hex()<br>shaHex()<br>sha256Hex()<br>sha1Hex()<br>sha()<br>md5()<br>sha512Hex()<br>sha1()</p>
-<p><strong>org.apache.commons.collections.CollectionUtils</strong><br>isEmpty()<br>isNotEmpty()<br>select()<br>transform()<br>filter()<br>find()<br>collect()<br>forAllDo()<br>addAll()<br>isEqualCollection()</p>
-<p><strong>org.apache.commons.lang3.ArrayUtils</strong><br>contains()<br>isEmpty()<br>isNotEmpty()<br>add()<br>clone()<br>addAll()<br>subarray()<br>indexOf()<br>EMPTY_OBJECT_ARRAY<br>EMPTY_STRING_ARRAY</p>
-<p><strong>org.apache.commons.beanutils.PropertyUtils</strong><br>getProperty()<br>setProperty()<br>getPropertyDescriptors()<br>isReadable()<br>copyProperties()<br>getPropertyDescriptor()<br>getSimpleProperty()<br>isWriteable()<br>setSimpleProperty()<br>getPropertyType()</p>
-<p><strong>org.apache.commons.lang3.StringEscapeUtils</strong><br>unescapeHtml4()<br>escapeHtml4()<br>escapeXml()<br>unescapeXml()<br>escapeJava()<br>escapeEcmaScript()<br>unescapeJava()<br>escapeJson()<br>escapeXml10()</p>
-<p><strong>org.apache.commons.beanutils.BeanUtils</strong><br>copyProperties()<br>getProperty()<br>setProperty()<br>describe()<br>populate()<br>copyProperty()<br>cloneBean()</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>我们为什么要用IOC和AOP</title>
-    <url>/2021/09/23/categories/%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8IOC%E5%92%8CAOP/</url>
-    <content><![CDATA[<h1 id="我们为什么要用IOC和AOP"><a href="#我们为什么要用IOC和AOP" class="headerlink" title="我们为什么要用IOC和AOP"></a>我们为什么要用IOC和AOP</h1><p>作为一名java开发，对Spring框架是再熟悉不过了。Spring支持的<em><strong>控制反转</strong></em>（Inversion of Control，缩写为IOC）和<em><strong>面向切面编程</strong></em>（Aspect-oriented programming，缩写为AOP），早已成为我们的开发习惯，仿佛Java开发天生就是如此。</p>
-<p>人总是会忽略习以为常的东西，所有人都熟悉IOC和AOP，却鲜有人说得清楚到底为什么用IOC和AOP。</p>
-<p>技术肯定是为了解决某个问题而诞生的，要弄清楚为什么要使用IOC和AOP，就得先弄清楚不用他们会碰到什么问题。</p>
-<h2 id="IOC"><a href="#IOC" class="headerlink" title="IOC"></a>IOC</h2><p>我们现在假设回到了没有IOC的时代，用传统的Servlet开发。</p>
-<h3 id="传统开发模式的弊端"><a href="#传统开发模式的弊端" class="headerlink" title="传统开发模式的弊端"></a>传统开发模式的弊端</h3><hr>
-<p>三层架构是经典的开发模型，我们一般将视图控制、业务逻辑和数据操作分别抽离出来单独形成一个类，这样各个的职责就非常清晰且易于复用和维护，大致代码如下：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@WebServlet(&quot;/user&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserServlet</span> <span class="keyword">extends</span> <span class="title">HttpServlet</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 用于执行业务逻辑的对象</span></span><br><span class="line">    <span class="keyword">private</span> UserService userService = <span class="keyword">new</span> UserServiceImpl();</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">        <span class="comment">// ...省略其他代码</span></span><br><span class="line">            </span><br><span class="line">        <span class="comment">// 执行业务逻辑</span></span><br><span class="line">        userService.doService();</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// ...返回页面视图</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserServiceImpl</span> <span class="keyword">implements</span> <span class="title">UserService</span></span>&#123;</span><br><span class="line">    <span class="comment">// 用于操作数据库的对象</span></span><br><span class="line">    <span class="keyword">private</span> UserDao userDao = <span class="keyword">new</span> UserDaoImpl();</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doService</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="comment">// ...省略业务逻辑代码</span></span><br><span class="line">            </span><br><span class="line">        <span class="comment">// 执行数据库操作</span></span><br><span class="line">        userDao.doUpdate();</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// ...省略业务逻辑代码</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserDaoImpl</span> <span class="keyword">implements</span> <span class="title">UserDao</span></span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doUpdate</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="comment">// ...省略JDBC代码</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>上层依赖下层的抽象，代码就分为了三层：<img src="https://i.loli.net/2021/04/24/6fSkvJtPUOLrK3Q.png" alt="三层分离"><br>业界普遍按照这种方式组织代码，其核心思想是职责分离。层次越低复用性越高，比如一个DAO对象往往会被多个Service对象使用，一个Service对象往往也被多个Controller对象使用。<img src="https://i.loli.net/2021/04/24/8DrzEBpGmZQicjU.png" alt="代码复用"><br>条理分明，井然有序。这些被复用的对象就像一个个的组件，供多方使用</p>
-<p>虽然这个倒三角看上去非常漂亮，然而我们目前的代码有一个比较大的问题，那就是我们只做了<strong>逻辑复用</strong>，并没有做到<strong>资源复用</strong></p>
-<p>上层调用下层时，必然会持有下一层对象的引用，即成员变量。目前我们每一个成员变量都会实例化一个对象，如下图所示：<img src="https://i.loli.net/2021/04/24/z3UEH7Frf95hju4.png" alt="非资源性复用"></p>
-<p>每一个链路都创建了同样的对象，造成了极大的资源浪费。本应多个Controller复用同一个Service，多个Service复用一个DAO。现在编程了一个Controller创建了多个重复的Service，多个Service又创建了多个重复的DAO，从倒三角编程了正三角。</p>
-<p>许多组件只需要实例化一个对象就足够了，创建多个没有任何的意义。针对对象重复创建的问题，我们自然而然想到了单例模式。只要编写类的时候都将其写为单例，这样就避免了资源浪费。但是，引入设计模式必然会带来复杂性，况且还是每一个类都是单例，每一个类都会有相似的代码，其弊端不言而喻。</p>
-<p>有人可能会说，我不在意<strong><strong>资源浪费</strong></strong>，我服务器大内存大没关系，我只求开发便捷痛快不想写额外的代码。</p>
-<p>确实，三层架构达到逻辑复用已经很方便了，但是还是会存在一个致命的缺陷，那就是<strong>变化的代价太大</strong></p>
-<p>假设有10个Controller依赖了UserService，最开始实例化的是UserServiceImpl，后面需要换一个实现类OtherUserServiceImpl，我就得逐个修改那10个Controller，非常麻烦，但是对于更换实现类的需求不会可能太多，没有说服力，那就换一个情况。</p>
-<p>之前演示的组件创建过程非常简单，new一下就完了，可很多时候创建一个组件没那么简单，比如DAO对象要依赖这样的一个数据源组件：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserDaoImpl</span> <span class="keyword">implements</span> <span class="title">UserDao</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> MyDataSource dataSource;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">UserDaoImpl</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 构造数据源</span></span><br><span class="line">        dataSource = <span class="keyword">new</span> MyDataSource(<span class="string">&quot;jdbc:mysql://localhost:3306/test&quot;</span>, <span class="string">&quot;root&quot;</span>, <span class="string">&quot;password&quot;</span>);</span><br><span class="line">        <span class="comment">// 进行一些其他配置</span></span><br><span class="line">        dataSource.setInitiaSize(<span class="number">10</span>);</span><br><span class="line">        dataSource.setMaxActive(<span class="number">100</span>);</span><br><span class="line">        <span class="comment">// ...省略更多配置项</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>该数据源组件想要真正生效的时候需要对其进行许多的配置，这个创建和配置过程是非常麻烦的，而且配置可能会随着业务需求的变化而经常更改，这个时候就需要修改每一个依赖该组件的地方，牵一发而动全身，这还只是演示了一个数据源的创建和配置过程，真是开发中可有太多的组件和太多的配置需要设置了，其麻烦程度堪称恐怖。</p>
-<p>当然这些都可以引入设计模式来解决，不过这样又绕回去了，设计模式本身也会带来一定的复杂性，这样就进入了死循环，传统开发模式编码复杂，要解决这种复杂又得陷入另一种复杂中，难道没有其他方式吗？当然不是，在讲解决方案之前，我们先来梳理一下目前出现的问题。</p>
-<ul>
-<li>创建了许多重复的对象，造成大量资源浪费</li>
-<li>更换实现类需要改动很多的地方</li>
-<li>创建和配置工作繁杂，给组件调用带来了极大的不便</li>
-</ul>
-<p>通过现象来看本质，这些问题出现都是一个原因：<strong>组件的调用方式参数了组件的创建和配置工作</strong></p>
-<p>其实，调用方只需要关注组件如何调用，至于这个组件是如何创建和配置又与调用方有什么关系呢，就好比我去饭店吃饭，饭菜并不需要我亲自做，饭店自然会做好给我送过来。如果我们在编码时，有一个<strong>东西</strong>能帮助我们创建和配置好这些组件，我们只需负责调用就好了，这个<strong>东西</strong>就是<strong>容器</strong></p>
-<p>容器这个概念我们已经接触过，Tomcat就是一个Servlet容器，他帮我们创建并配置好了Servlet，我们只需要编写业务逻辑即可。试想一下，如果Servlet要我们自己创建，HttpRequest、HttpResponse对象也需要我们自己配置，那代码量就有点恐怖了。</p>
-<p>Tomcat是Servlet容器，值负责管理Servlet，我们平常使用的组件则需要另外一中容器来管理，这种容器我们称之为<strong>IOC容器</strong>。</p>
-<h3 id="控制反转和依赖注入"><a href="#控制反转和依赖注入" class="headerlink" title="控制反转和依赖注入"></a>控制反转和依赖注入</h3><p>控制反转，是指对象的创建和配置的控制权从调用方转移给了容器。好比在家做菜，菜的味道全部由自己掌控，而去餐馆吃饭，菜的味道由餐馆方掌控，IOC就相当于餐馆的角色</p>
-<p>有个IOC容器，我们可以将对象的创建交由容器管理，交由容器管理后的对象称为Bean，调用方不再负责组件的创建，要使用组件时直接获取Bean即可。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserServiceImpl</span> <span class="keyword">implements</span> <span class="title">UserService</span></span>&#123;</span><br><span class="line">    <span class="meta">@Autowired</span> <span class="comment">// 获取 Bean</span></span><br><span class="line">    <span class="keyword">private</span> UserDao userDao;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>调用方只需按照约定声明依赖项，所需要的的Bean就自动配置完毕了，就好像在调用方外部注入了一个依赖项给你使用，所以这种方式称之为<strong>依赖注入（Dependency Injection，缩写为DI）</strong>，就相当于你给钱，就可以点各种菜一样，给你做好送过来。<em><strong>控制反转和依赖注入是一体两面，都是同一种开发模式的表现形式。</strong></em></p>
-<p>IOC轻而易举的解决了我们刚刚总结的问题：</p>
-<ul>
-<li>对象交由容器管理后，默认是单例的，这就解决了资源浪费的问题。</li>
-<li>如要更换实现类，只需要更改Bean的声明即可，即可达到无感知更换。</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserServiceImpl</span> <span class="keyword">implements</span> <span class="title">UserService</span></span>&#123;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 将该实现类声明为 Bean</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">OtherUserServiceImpl</span> <span class="keyword">implements</span> <span class="title">UserService</span></span>&#123;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>现在组件的使用和组件的创建与配置完全分离开来，调用方只需调用组件而无需关心其他工作，这极大提高了我们的开发效率，也让整个应用充满了灵活性，拓展性。</p>
-<p>这样看来，我们中意IOC不是没有道理的。</p>
-<h3 id="AOP"><a href="#AOP" class="headerlink" title="AOP"></a>AOP</h3><p>我们再来看没有AOP会怎样。</p>
-<h3 id="面向对象的局限性"><a href="#面向对象的局限性" class="headerlink" title="面向对象的局限性"></a>面向对象的局限性</h3><p>对象对象编程（Object-oriented programming，缩写OOP）三大特性：集成，封装，多态，我们已经使用的炉火纯青，OOP的好处无需累赘，大家都深有体会，我们在来看下OOP的局限性</p>
-<p>当有重复代码时，可以将其封装出来然后使用，我们通过分层，分包，分类来规划不同的逻辑和职责，就像前面讲的三层架构，但这里的复用都是<em><strong>核心业务逻辑</strong></em>，并不能复用一些<strong>辅助逻辑</strong>，比如：日志记录，性能统计，安全校验，事务管理等等，这些边缘性逻辑往往贯穿你的整个核心业务，传统OOP很难将其封装。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserServiceImpl</span> <span class="keyword">implements</span> <span class="title">UserService</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doService</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;---安全校验---&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;---性能统计 Start---&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;---日志打印 Start---&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;---事务管理 Start---&quot;</span>);</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">&quot;业务逻辑&quot;</span>);</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">&quot;---事务管理 End---&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;---日志打印 End---&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;---性能统计 End---&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>为了方便演示，我们只打印语句，就算如此这样的代码看着也很难受，而且这些逻辑是所有的业务方法都要加上，想想就很恐怖</p>
-<p>OOP是至上而下的编程方式，犹如一个树状图，A调用B，B调用C，或者A继承B，B继承C，这种方式对于业务逻辑来说是合适的，通过调用或者继承以复用。而辅助逻辑就像一把闸刀横向贯穿了所有方法，如图所示：<img src="https://i.loli.net/2021/04/24/kGZqm9oYFBUa4Vb.png" alt="AOP"><br>这一条条横线切开了OOP的树状结构，犹如一个大蛋糕被切开了多层，每一层都有相同的执行逻辑，所以大家将这些辅助逻辑称之为切面</p>
-<p>代理模式用来增加或者增强原有功能在合适不过了，但是切面逻辑的难点不是<strong>不修改原有的业务</strong>，而是对所有业务生效，对一个业务类增强就得新建一个代理类，对所有业务增强就得新建所有代理类，这无疑是一种灾难，而且这里只是演示了一个日志打印的切面逻辑，如果我在加一个性能统计的切面，就得新建一个切面类来代理性能统计的代理类，一旦切面多起来这个代理嵌套就非常深。</p>
-<p>面向切面编程（Aspect-oriented programming，缩写为AOP），正式为了解决这一问题而诞生的。</p>
-<h3 id="AOP-1"><a href="#AOP-1" class="headerlink" title="AOP"></a>AOP</h3><p>AOP不是OOP的对立面，而是对OOP的一种补充，OOP是纵向的，AOP是横向的，连着相结合能够构建良好的程序结构，AOP技术，<em><strong>让我们不修改原有的代码，便能让切面逻辑在所有的业务逻辑中生效</strong></em></p>
-<p>我们只需要声明一个切面，写上切面逻辑：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Aspect</span> <span class="comment">// 声明一个切面</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyAspect</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 原业务方法执行前</span></span><br><span class="line">    <span class="meta">@Before(&quot;execution(public void com.rudecrab.test.service.*.doService())&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">methodBefore</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;===AspectJ 方法执行前===&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 原业务方法执行后</span></span><br><span class="line">    <span class="meta">@AfterReturning(&quot;execution(* com.rudecrab.test.service..doService(..))&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">methodAddAfterReturning</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;===AspectJ 方法执行后===&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>无论你有一个业务方法，还是一万个业务方法，对我们开发者来说只需编写一次切面逻辑，就能让所有业务方法生效，极大提高了我们的开发效率。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>IOC解决的问题：</p>
-<ul>
-<li>创建许多重复的对象，造成了大量资源浪费</li>
-<li>更换实现类需要改动多个地方</li>
-<li>创建和配置组件工作复杂，给组件调用方带来了极大的不便</li>
-</ul>
-<p>AOP解决的问题：</p>
-<ul>
-<li>切面逻辑编写繁琐，有多个业务就需要编写多少次。</li>
-</ul>
-]]></content>
   </entry>
   <entry>
     <title>查询占用端口</title>
