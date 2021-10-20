@@ -1,1 +1,71 @@
-<mxfile host="app.diagrams.net" modified="2021-10-20T13:14:39.496Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36" version="15.2.9" etag="aSU0NjWeM3aq34fd5Ib8" type="github"><diagram id="P-3INV9NaK0cqQUdS8G_">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-10-20T13:22:27.963Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36" etag="MVbKs8iPW0XvQSHGy6qb" version="15.2.9" type="github">
+  <diagram id="P-3INV9NaK0cqQUdS8G_" name="Page-1">
+    <mxGraphModel dx="946" dy="539" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UZ3LVtJMlLEFkbB7KUAC-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="UZ3LVtJMlLEFkbB7KUAC-1" target="UZ3LVtJMlLEFkbB7KUAC-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UZ3LVtJMlLEFkbB7KUAC-1" value="jdk动态代理&lt;br&gt;根据接口生成1个proxy.class实现接口&lt;br&gt;调用具体方法---&amp;gt;反射" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="90" width="360" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="UZ3LVtJMlLEFkbB7KUAC-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="UZ3LVtJMlLEFkbB7KUAC-2" target="UZ3LVtJMlLEFkbB7KUAC-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UZ3LVtJMlLEFkbB7KUAC-2" value="cglib动态代理&lt;br&gt;根据具体类生成多个动态代理----&amp;gt;继承" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="90" width="380" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="UZ3LVtJMlLEFkbB7KUAC-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="UZ3LVtJMlLEFkbB7KUAC-3" target="UZ3LVtJMlLEFkbB7KUAC-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UZ3LVtJMlLEFkbB7KUAC-3" value="Proxy.newProxyInstance" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="240" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="UZ3LVtJMlLEFkbB7KUAC-9" value="调用" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UZ3LVtJMlLEFkbB7KUAC-5" target="UZ3LVtJMlLEFkbB7KUAC-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UZ3LVtJMlLEFkbB7KUAC-5" value="$Proxy.class" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UZ3LVtJMlLEFkbB7KUAC-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UZ3LVtJMlLEFkbB7KUAC-7" target="UZ3LVtJMlLEFkbB7KUAC-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UZ3LVtJMlLEFkbB7KUAC-18" value="通过ASM" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="UZ3LVtJMlLEFkbB7KUAC-17">
+          <mxGeometry x="-0.075" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UZ3LVtJMlLEFkbB7KUAC-7" value="enhancer.create()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="240" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UZ3LVtJMlLEFkbB7KUAC-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UZ3LVtJMlLEFkbB7KUAC-8" target="UZ3LVtJMlLEFkbB7KUAC-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UZ3LVtJMlLEFkbB7KUAC-8" value="select()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UZ3LVtJMlLEFkbB7KUAC-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UZ3LVtJMlLEFkbB7KUAC-10" target="UZ3LVtJMlLEFkbB7KUAC-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UZ3LVtJMlLEFkbB7KUAC-10" value="invocationHandler.invoke方法" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="590" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UZ3LVtJMlLEFkbB7KUAC-12" value="通过反射去调用" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="730" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UZ3LVtJMlLEFkbB7KUAC-16" value="" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="590" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UZ3LVtJMlLEFkbB7KUAC-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UZ3LVtJMlLEFkbB7KUAC-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="338" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UZ3LVtJMlLEFkbB7KUAC-19" value="专门用来编写字节码文件的框架" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="771" y="308" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
